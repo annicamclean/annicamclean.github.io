@@ -1,0 +1,55 @@
+body {
+    color: #404040;
+    background-color: white;
+    font-family: Georgia, Garamond, serif;
+}
+a:hover {
+    color: #31a0d3;
+}
+h1, h2, h3 {
+    color: #31a0d3;
+    background-color: #F0F0F0;
+    font-family: 'Lucida Sans Unicode', Helvetica, Arial, sans-serif ;
+    text-align: center;
+    font-size: 25pt;
+    text-decoration: underline;
+    text-decoration-color: #31a0d3;
+    font-weight: 900;
+}
+
+h2, h3 {
+    text-align: left;
+    font-weight: normal;
+    font-size: 20pt;
+    text-decoration-line: none;
+    font-weight: 500;
+}
+
+.pie {
+    color: #A4A400;
+    text-decoration-line: none;
+}
+a:hover.pie{
+    color: #f1f102;
+    text-decoration-line: underline;
+}
+
+.cobbler {
+    color: #d1a74b;
+    text-decoration-line: none;
+}
+
+a:hover.cobbler {
+    color: #ffcb5a;
+    text-decoration-line: underline;
+}
+
+.chili {
+    color: #9e300e;
+    text-decoration-line: none;
+}
+
+a:hover.chili {
+    color: #ff4d17;
+    text-decoration-line: underline;
+}
