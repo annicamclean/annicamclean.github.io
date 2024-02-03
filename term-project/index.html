@@ -1,54 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Watch Website</title>
-    <link rel="stylesheet" href="./styles/styles.css" />
-  </head>
-  <body>
-    <header>
-      <h1><a href="./index.html" id="title">WATCH WEBSITE</a></h1>
-      <div id="lcs-container">
-        <button class="lcs">
-          <img class="lcs-images" src="./images/login2.png" alt="Login" />
-        </button>
-        <button class="lcs">
-        <img
-            class="lcs-images"
-            src="./images/shopping-cart.png"
-            alt="Shopping Cart"/>
-        </button>
-        <form role="search" class="lcs">
-        <input type="text" placeholder="Search.." aria-label="Search through site content">
-        <button><svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg></button>
-        <!--<button class="lcs" type="submit">
-            <img class="lcs-images" src="./images/search.png" alt="Search" />
-        </button>-->
-        </form>
+    <title>Splash Page</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Cormorant Garamond' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Crimson Pro' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Explora' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="bg">
+        <header>
+            <h1><span class="word-number">21</span> JEWELS</h1>
+            <div class="top-nav">
+                <a href="#">About</a>
+                <a href="#">Login</a>
+                <form role="search">
+                    <input type="text" placeholder="Search.." aria-label="Search through site content">
+                    <button type="submit" class="search-button">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+                <img src="/images/menu.png" alt="menu" class="menu-icon" onclick="toggleSplashMenu()">
+            </div>
+        </header>
+        <main>
+            <div class="colmun-1">
+                <h2 class="catch">The place to <span class="word-services">buy</span>, <span
+                        class="word-services">sell</span>, and <span class="word-services">service</span> </h2>
+                <div class="break"></div>
+                <h2 class="catch"> <span class="word-modern">modern</span> and <span class="word-vintage">vintage</span>
+                    watches</h2>
+                <div class="break"></div>
+                <div class="bottom-nav">
+                    <a href="/home.html">Home</a>
+                    <a href="/home.html">Brands</a>
+                    <a href="home.html">Vintage</a>
+                    <a href="/home.html">Style</a>
+                    <a href="home.html">Service</a>
+                </div>
+            </div>
+            <div class="column-2">
+                <div class="omega-splash">
+                    <a href="/home.html"><img src="/images/omega-watch.jpg" alt="omega seamaster">
+                    <p>Checkout our Omega Collection</p></a>
+                </div>
+                <div class="tissot-splash">
+                    <a href="/home.html"><img src="/images/tissot-watch.jpg" alt="tissot watch">
+                    <p>Checkout our Tissot Collection</p></a>
+                </div>
+                <div class="seiko-splash">
+                    <a href="/home.html"> <img src="/images/seiko-watch.jpg" alt="Seiko presage">
+                    <p>Checkout the Seiko Collection</p></a>
+                </div>
+                <div class="service-splash">
+                    <a href="/home.html"> <img src="/images/watch-repair.jpg" alt="Watch movement and repair goggles">
+                    <p>Is your watch in need of a service?</p></a>
+                </div>
+            </div>
+        </main>
     </div>
-    </header>
-    <nav>
-    <ul>
-        <li><a href="#">Brands</a></li>
-        <li><a href="#">Style</a></li>
-        <li><a href="#">Vintage</a></li>
-        <li><a href="#">Sell</a></li>
-        <li><a href="#">Service</a></li>
-      </ul>
-    </nav>
-    <footer>
-      <a
-        href="https://www.flaticon.com/free-icons/transparency"
-        title="transparency icons"
-        >Transparency icons created by judanna - Flaticon</a
-      >
-      <a href="https://www.flaticon.com/free-icons/cart" title="cart icons"
-        >Cart icons created by Freepik - Flaticon</a
-      >
-      <a href="https://www.flaticon.com/free-icons/login" title="login icons"
-        >Login icons created by Freepik - Flaticon</a
-      >
-    </footer>
-  </body>
+    <script src="script.js"></script>
+</body>
+
 </html>
