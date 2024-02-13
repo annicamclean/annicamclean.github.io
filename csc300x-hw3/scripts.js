@@ -25,7 +25,7 @@ function expand(event) {
 
 //adds description with image
 function description(currentImage) {
-    if (currentImage == "http://127.0.0.1:5500/images/Spartan-Burger-Copy.jpg") {
+    if (currentImage == "https://annicamclean.github.io/csc300x-hw3/images/Spartan-Burger-Copy.jpg") {
         const oldDesc = document.querySelector('.show');
         if (!oldDesc) {
             const newDesc = document.querySelector('.desc1');
@@ -38,7 +38,7 @@ function description(currentImage) {
             newDesc.classList.remove('hide');
             newDesc.classList.add('show');
         }
-    } else if (currentImage == "http://127.0.0.1:5500/images/Black-Bean-Burger-Copy.jpeg") {
+    } else if (currentImage == "https://annicamclean.github.io/csc300x-hw3/images/Black-Bean-Burger-Copy.jpeg") {
         const oldDesc = document.querySelector('.show');
         if (!oldDesc) {
             const newDesc = document.querySelector('.desc2');
@@ -51,7 +51,7 @@ function description(currentImage) {
             newDesc.classList.remove('hide');
             newDesc.classList.add('show');
         }
-    } else if (currentImage == "http://127.0.0.1:5500/images/Bacon-Burger-Copy.jpg") {
+    } else if (currentImage == "https://annicamclean.github.io/csc300x-hw3/images/Bacon-Burger-Copy.jpg") {
         const oldDesc = document.querySelector('.show');
         if (!oldDesc) {
             const newDesc = document.querySelector('.desc3');
@@ -64,7 +64,7 @@ function description(currentImage) {
             newDesc.classList.remove('hide');
             newDesc.classList.add('show');
         }
-    } else if (currentImage == "http://127.0.0.1:5500/images/Spartan-Burger.jpg") {
+    } else if (currentImage == "https://annicamclean.github.io/csc300x-hw3/images/Spartan-Burger.jpg") {
         const oldDesc = document.querySelector('.show');
         if (!oldDesc) {
             const newDesc = document.querySelector('.desc4');
@@ -77,7 +77,7 @@ function description(currentImage) {
             newDesc.classList.remove('hide');
             newDesc.classList.add('show');
         }
-    } else if (currentImage == "http://127.0.0.1:5500/images/Black-Bean-Burger.jpeg") {
+    } else if (currentImage == "https://annicamclean.github.io/csc300x-hw3/images/Black-Bean-Burger.jpeg") {
         const oldDesc = document.querySelector('.show');
         if (!oldDesc) {
             const newDesc = document.querySelector('.desc5');
@@ -90,7 +90,7 @@ function description(currentImage) {
             newDesc.classList.remove('hide');
             newDesc.classList.add('show');
         }
-    } else if (currentImage == "http://127.0.0.1:5500/images/Bacon-Burger.jpg") {
+    } else if (currentImage == "https://annicamclean.github.io/csc300x-hw3/images/Bacon-Burger.jpg") {
         const oldDesc = document.querySelector('.show');
         if (!oldDesc) {
             const newDesc = document.querySelector('.desc6');
@@ -103,7 +103,7 @@ function description(currentImage) {
             newDesc.classList.remove('hide');
             newDesc.classList.add('show');
         }
-    } else if (currentImage == "http://127.0.0.1:5500/images/Grilled-Teriyaki-Chicken.jpg") {
+    } else if (currentImage == "https://annicamclean.github.io/csc300x-hw3/images/Grilled-Teriyaki-Chicken.jpg") {
         const oldDesc = document.querySelector('.show');
         if (!oldDesc) {
             const newDesc = document.querySelector('.desc7');
@@ -116,7 +116,7 @@ function description(currentImage) {
             newDesc.classList.remove('hide');
             newDesc.classList.add('show');
         }
-    } else if (currentImage == "http://127.0.0.1:5500/images/orange-chicken.jpg") {
+    } else if (currentImage == "https://annicamclean.github.io/csc300x-hw3/images/orange-chicken.jpg") {
         const oldDesc = document.querySelector('.show');
         if (!oldDesc) {
             const newDesc = document.querySelector('.desc8');
@@ -129,7 +129,7 @@ function description(currentImage) {
             newDesc.classList.remove('hide');
             newDesc.classList.add('show');
         }
-    } else if (currentImage == "http://127.0.0.1:5500/images/Honey-Walnut-Shrimp.jpg") {
+    } else if (currentImage == "https://annicamclean.github.io/csc300x-hw3/images/Honey-Walnut-Shrimp.jpg") {
         const oldDesc = document.querySelector('.show');
         if (!oldDesc) {
             const newDesc = document.querySelector('.desc9');
@@ -142,7 +142,7 @@ function description(currentImage) {
             newDesc.classList.remove('hide');
             newDesc.classList.add('show');
         }
-    } else if (currentImage == "http://127.0.0.1:5500/images/Spicy-Chicken-Sandwhich.jpg") {
+    } else if (currentImage == "https://annicamclean.github.io/csc300x-hw3/images/Spicy-Chicken-Sandwhich.jpg") {
         const oldDesc = document.querySelector('.show');
         if (!oldDesc) {
             const newDesc = document.querySelector('.desc10');
@@ -155,7 +155,7 @@ function description(currentImage) {
             newDesc.classList.remove('hide');
             newDesc.classList.add('show');
         }
-    } else if (currentImage == "http://127.0.0.1:5500/images/12-Count-Nuggets.jpg") {
+    } else if (currentImage == "https://annicamclean.github.io/csc300x-hw3/images/12-Count-Nuggets.jpg") {
         const oldDesc = document.querySelector('.show');
         if (!oldDesc) {
             const newDesc = document.querySelector('.desc11');
@@ -168,7 +168,7 @@ function description(currentImage) {
             newDesc.classList.remove('hide');
             newDesc.classList.add('show');
         }
-    } else if (currentImage == "http://127.0.0.1:5500/images/Cobb-Salad.jpg") {
+    } else if (currentImage == "https://annicamclean.github.io/csc300x-hw3/images/Cobb-Salad.jpg") {
         const oldDesc = document.querySelector('.show');
         if (!oldDesc) {
             const newDesc = document.querySelector('.desc12');
