@@ -9,8 +9,8 @@ webpageNav.style.maxHeight = "0px";
 
 function toggleHomeMenu() {
     if (lcsContainer.style.maxHeight == "0px" && webpageNav.style.maxHeight == "0px") {
-        lcsContainer.style.maxHeight = "150px";
-        webpageNav.style.maxHeight = "150px";
+        lcsContainer.style.maxHeight = "190px";
+        webpageNav.style.maxHeight = "190px";
     } else {
         lcsContainer.style.maxHeight = "0px";
         webpageNav.style.maxHeight = "0px";

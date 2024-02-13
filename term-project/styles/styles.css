@@ -10,6 +10,7 @@ body {
     align-items: center;
     height: 10%;
     width: 100%;
+    padding-top: 15px;
     background-color: transparent;
     /* It does not work and I don't know why
     border-bottom: 5px double #0d0d0d;
@@ -20,6 +21,7 @@ body {
 .home nav ul {
     margin: 0;
 }
+
 
 .home nav ul, li, a {
     text-transform: uppercase;
@@ -36,9 +38,44 @@ body {
     font-size: 20px;
 }
 
-.home nav a:hover {
-    text-decoration: #769ca3 underline 3px;
+.dropdown-content {
+    display: none;
+    background-color: #ccccc8;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropbtn {
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown .dropbtn {
+    font-family: inherit;
+    background-color: inherit;
+    margin: 0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.down-arrow {
+    font-size: inherit;
     color: #769ca3;
+}
+
+.down-arrow i:hover {
+    color: #5b6e74;
+}
+
+.home nav a:hover {
+    text-decoration: #5b6e74 underline 3px;
+    color: #5b6e74;
     background-color: transparent;
 }
 
@@ -76,17 +113,10 @@ body {
     font-size: 20px;
 }
 
-.mobile-view-header a {
+.mobile-view-header {
     display: none;
 }
 
-.mobile-view-header li {
-    display: none;
-}
-
-.mobile-view-header form {
-    display: none;
-}
 
 .lcs-login, .lcs-cart {
     font-size: 30px;
@@ -394,55 +424,39 @@ footer h3 {
 
     #webpage-nav {
         overflow: hidden;
-    }
-
-    #webpage-nav {
         border: 0px;
         height: 500px;
         display: flex;
         justify-content: end;
-        align-items: center;
-    }
-
-    #webpage-nav ul {
+        align-items: end;
+        flex-wrap: wrap;
+        flex-direction: column;
         width: 100%;
         background-color: #769ca3;
     }
 
-    #webpage-nav ul li {
-        display: flex;
-    }
-
-    #webpage-nav ul li a {
+    #webpage-nav a {
         color: #0d0d0d;
         display: flex;
         justify-content: end;
         align-items: start;
+        font-size: 22px;
     }
 
-    .mobile-view-header {
+
+    .dropdown-content {
+        display: none;
+        background-color: #769ca3;
+        position: absolute;
+        text-align: center;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        height: fit-content;
+    }
+
+    .mobile-view-header a{
         overflow: hidden;
-    }
-
-    .mobile-view-header ul {
         width: 100%;
         background-color: #769ca3;
-        right: 0;
-    }
-
-    .mobile-view-header ul li {
-        display: flex;
-        justify-content: right;
-        align-items: end;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-
-    .mobile-view-header ul li a {
-        display: flex;
-        justify-content: right;
-        align-items: end;
-        color: #0d0d0d;
     }
 
     .home main {

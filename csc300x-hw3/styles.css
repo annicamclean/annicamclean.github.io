@@ -1,0 +1,173 @@
+html {
+    background-color: navy;
+    color: gold;
+}
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0px;
+}
+
+header {
+    width: 100%;
+    height: 20%;
+    background-color: rgb(60, 60, 255);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding-right: 10px;
+}
+
+header a {
+    color: gold;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: goldenrod;
+}
+
+.trending a, .trending h3 {
+    color: white;
+    text-decoration: none;
+}
+
+.trending h3:hover a:hover {
+    color: goldenrod;
+}
+
+.title {
+    display: flex;
+    height: 50%;
+    width: 100%;
+}
+
+.title h1 {
+    width: 35%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.social-media {
+    width: 10%;
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.social-media img {
+    width: 5%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: capitalize;
+}
+
+p {
+    color: white;
+}
+
+.intro {
+    width: 100%;
+    height: 10%;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    height: 70%;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.post {
+    width: 70%;
+}
+
+article {
+    background-color: rgb(60, 60, 255);
+}
+
+.newest-post .logo img {
+    width: 20%;
+    height: 20%;
+}
+
+.tiny-articles .logo img {
+    width: 10%;
+}
+
+.newest-post {
+    width: 90%;
+    height: 27%;
+}
+
+.newest-post img {
+    width: 40%;
+    height: 40%;
+}
+
+.all-post {
+    width: 90%;
+    height: 73%;
+}
+
+.tiny-articles {
+    width: 100%;
+}
+
+.trending {
+    width: 30%;
+}
+
+
+.food-to-get {
+    width: 70%;
+}
+
+.food-items {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.food-items button {
+    height: fit-content;
+    margin: 3px;
+    border-radius: 5px;
+}
+
+.items-added {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.recommendations {
+    display: block;
+}
+
+.recommendations .images {
+    display: flex;
+}
+
+.recommendations img.small {
+    width: 10%;
+    height: 30%;
+}
+
+.recommendations img.big {
+    width: 15%;
+}
+
+.show {
+    display: block;
+}
+.hide{
+    display: none;
+}
