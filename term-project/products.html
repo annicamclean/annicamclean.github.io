@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brands</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js" defer></script>
+    <link href='https://fonts.googleapis.com/css?family=Cormorant+Garamond' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Crimson+Pro' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Explora' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="products">
+        <header>
+            <h1><a href="./home.html" id="title"><span class="word-21">21</span> Jewels</a></h1>
+            <div class="lcsContainer">
+                <a class="lcs-login" href="./home.html"><i class="fa fa-user-circle-o"></i></a>
+                <a class="lcs-cart" href="./cart.html"><i class="fa fa-shopping-cart"></i></a>
+                <form role="search">
+                    <input type="text" placeholder="Search.." aria-label="Search through site content">
+                    <a class="lcs-search" href="./home.html"><i class="fa fa-search"></i></a>
+
+                </form>
+                <img src="./images/menu.png" alt="menu" class="menu-icon">
+            </div>
+        </header>
+        <nav class="webpage-nav">
+            <div class="large-screen">
+                <a href="./products.html">Brands</a>
+                <a href="./products.html">Style</a>
+                <a href="./home.html">Home</a>
+                <a href="./products.html">Vintage</a>
+                <a href="./home.html">Service</a>
+            </div>
+            <div class="small-screen">
+                <a href="./products.html">Brands</a>
+                <a href="./products.html">Style</a>
+                <a href="./home.html">Home</a>
+                <a href="./products.html">Vintage</a>
+                <a href="./home.html">Service</a>
+                <a href="./home.html">Login/Sign-up</a>
+                <a href="./home.html">Shopping Cart</a>
+                <!--<form role="search" class="mobile-view-header">
+				<input type="text" class="mobile-view-header" placeholder="Search.."
+					aria-label="Search through site content">
+			</form>-->
+            </div>
+        </nav>
+        <main>
+            <h2 class="product-title">Brands</h2>
+            <div class="brand-filter">
+                <label for="brand-filter">Filter</label>
+                <select name="filter" id="brand-filter">
+                    <option value="best-seller">Best Seller</option>
+                    <option value="price-high">Price - High</option>
+                    <option value="price-low">Price - Low</option>
+                    <option value="by-name">By-Name</option>
+                </select>
+            </div>
+            <div class="brand-all-products">
+                <!--Brands
+					<a href="#">Bulova</a>
+                    <a href="#">Hamilton</a>
+                    <a href="#">Longines</a>
+                    <a href="#">Orient</a>
+                    <a href="#">Omega</a>
+                    <a href="#">Seiko</a>
+                    <a href="#">Tissot</a>
+                Style
+                    <a href="#">Dress</a>
+					<a href="#">Field/Pilot</a>
+					<a href="#">Diver</a>
+					<a href="#">Chronograph</a>
+					<a href="#">GMT</a>
+				</div>-->
+                <div class="brand-names">
+                    <a href="#">Bulova</a>
+                    <a href="#">Hamilton</a>
+                    <a href="#">Longines</a>
+                    <a href="#">Orient</a>
+                    <a href="#">Omega</a>
+                    <a href="#">Seiko</a>
+                    <a href="#">Tissot</a>
+                </div>
+                <div class="brand-products">
+                    <h3>Bulova</h3>
+                    <div class="brand-sections">
+                        <div class="product-quick-view">
+                            <img src="./images/Bulova/bulova-a11-hack-watch.jpg" alt="A-11 Hack Watch from https://www.bulova.com/us/en/collection/mens/">
+                            <a href="./details.html">
+                                <p>A-11 Hack Watch</p>
+                            </a>
+                            <p>$337.50</p>
+                        </div>
+                        <div class="product-quick-view">
+                            <img src="./images/Bulova/bulova-banker.jpg" alt="Banker from https://www.bulova.com/us/en/collection/mens/">
+                            <a href="./details.html">
+                                <p>Banker</p>
+                            </a>
+                            <p>$995.00</p>
+                        </div>
+                        <div class="product-quick-view">
+                            <img src="./images/Bulova/bulova-chronograph.jpg" alt="Chronograph from https://www.bulova.com/us/en/collection/mens/">
+                            <a href="./details.html">
+                                <p>Chronograph</p>
+                            </a>
+                            <p>$2,495.00</p>
+                        </div>
+                        <div class="product-quick-view">
+                            <img src="./images/Bulova/bulova-commodore.jpg" alt="Commodore from https://www.bulova.com/us/en/collection/mens/">
+                            <a href="./details.html">
+                                <p>Commodore</p>
+                            </a>
+                            <p>$1,350.00</p>
+                        </div>
+                        <div class="product-quick-view">
+                            <img src="./images/Bulova/bulova-fly-me-to-the-moon.jpg" alt="Fly Me to The Moon from from https://www.bulova.com/us/en/collection/mens/">
+                            <a href="./details.html">
+                                <p>Fly Me to The Moon</p>
+                            </a>
+                            <p>$875.00</p>
+                        </div>
+                        <div class="product-quick-view">
+                            <img src="./images/Bulova/bulova-hack-watch.jpg" alt="Hack Watch from https://www.bulova.com/us/en/collection/mens/">
+                            <a href="./details.html">
+                                <p>Hack Watch</p>
+                            </a>
+                            <p>$318.75</p>
+                        </div>
+                        <div class="product-quick-view">
+                            <img src="./images/Bulova/bulova-oculus-automatic.jpg" alt="The Oculus Automatic from https://www.bulova.com/us/en/collection/mens/">
+                            <a href="./details.html">
+                                <p>The Oculus Automatic</p>
+                            </a>
+                            <p>$495.00</p>
+                        </div>
+                        <div class="product-quick-view">
+                            <img src="./images/Bulova/bulova-mil-ships.jpg" alt="MIL Ships from https://www.bulova.com/us/en/collection/mens/">
+                            <a href="./details.html">
+                                <p>MIL Ships</p>
+                            </a>
+                            <p>$671.25</p>
+                        </div>
+                        <div class="product-quick-view">
+                            <img src="./images/Bulova/bulova-oceanographer-gmt.jpg" alt="Oceanographer from https://www.bulova.com/us/en/collection/mens/">
+                            <a href="./details.html">
+                                <p>Oceanographer</p>
+                            </a>
+                            <p>$1,012.50</p>
+                        </div>
+                        <div class="product-quick-view">
+                            <img src="./images/Bulova/bulova-surveyor.jpg" alt="Surveyor from https://www.bulova.com/us/en/collection/mens/">
+                            <a href="./details.html">
+                                <p>Surveyor</p>
+                            </a>
+                            <p>$425.00</p>
+                        </div>
+                        <div class="product-quick-view">
+                            <img src="./images/Bulova/bulova-sutton.jpg" alt="Sutton from https://www.bulova.com/us/en/collection/mens/">
+                            <a href="./details.html">
+                                <p>Sutton</p>
+                            </a>
+                            <p>$318.75</p>
+                        </div>
+                        <div class="product-quick-view">
+                            <img src="./images/Bulova/bulova-wilton-gmt.jpg" alt="Wilton GMT from https://www.bulova.com/us/en/collection/mens/">
+                            <a href="./details.html">
+                                <p>Wilton GMT</p>
+                            </a>
+                            <p>$671.25</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <h3>Hamilton</h3>
+                    <div class="brand-sections">
+                        <div class="product-quick-view">
+                            <img src="./images/Bulova/pilot-pioneer-mechanical-chrono.png" alt="A-11 Hack Watch from https://www.bulova.com/us/en/collection/mens/">
+                            <a href="./details.html">
+                                <p>A-11 Hack Watch</p>
+                            </a>
+                            <p>$337.50</p>
+                        </div>
+                        <div class="product-quick-view">
+                            <img src="./images/Bulova/bulova-banker.jpg" alt="Banker from https://www.bulova.com/us/en/collection/mens/">
+                            <a href="./details.html">
+                                <p>Banker</p>
+                            </a>
+                            <p>$995.00</p>
+                        </div>
+                        <div class="product-quick-view">
+                            <img src="./images/Bulova/bulova-chronograph.jpg" alt="Chronograph from https://www.bulova.com/us/en/collection/mens/">
+                            <a href="./details.html">
+                                <p>Chronograph</p>
+                            </a>
+                            <p>$2,495.00</p>
+                        </div>
+                        <div class="product-quick-view">
+                            <img src="./images/Bulova/bulova-commodore.jpg" alt="Commodore from https://www.bulova.com/us/en/collection/mens/">
+                            <a href="./details.html">
+                                <p>Commodore</p>
+                            </a>
+                            <p>$1,350.00</p>
+                        </div>
+                        <div class="product-quick-view">
+                            <img src="./images/Bulova/bulova-fly-me-to-the-moon.jpg" alt="Fly Me to The Moon from from https://www.bulova.com/us/en/collection/mens/">
+                            <a href="./details.html">
+                                <p>Fly Me to The Moon</p>
+                            </a>
+                            <p>$875.00</p>
+                        </div>
+                        <div class="product-quick-view">
+                            <img src="./images/Bulova/bulova-hack-watch.jpg" alt="Hack Watch from https://www.bulova.com/us/en/collection/mens/">
+                            <a href="./details.html">
+                                <p>Hack Watch</p>
+                            </a>
+                            <p>$318.75</p>
+                        </div>
+                        <div class="product-quick-view">
+                            <img src="./images/Bulova/bulova-oculus-automatic.jpg" alt="The Oculus Automatic from https://www.bulova.com/us/en/collection/mens/">
+                            <a href="./details.html">
+                                <p>The Oculus Automatic</p>
+                            </a>
+                            <p>$495.00</p>
+                        </div>
+                        <div class="product-quick-view">
+                            <img src="./images/Bulova/bulova-mil-ships.jpg" alt="MIL Ships from https://www.bulova.com/us/en/collection/mens/">
+                            <a href="./details.html">
+                                <p>MIL Ships</p>
+                            </a>
+                            <p>$671.25</p>
+                        </div>
+                        <div class="product-quick-view">
+                            <img src="./images/Bulova/bulova-oceanographer-gmt.jpg" alt="Oceanographer from https://www.bulova.com/us/en/collection/mens/">
+                            <a href="./details.html">
+                                <p>Oceanographer</p>
+                            </a>
+                            <p>$1,012.50</p>
+                        </div>
+                        <div class="product-quick-view">
+                            <img src="./images/Bulova/bulova-surveyor.jpg" alt="Surveyor from https://www.bulova.com/us/en/collection/mens/">
+                            <a href="./details.html">
+                                <p>Surveyor</p>
+                            </a>
+                            <p>$425.00</p>
+                        </div>
+                        <div class="product-quick-view">
+                            <img src="./images/Bulova/bulova-sutton.jpg" alt="Sutton from https://www.bulova.com/us/en/collection/mens/">
+                            <a href="./details.html">
+                                <p>Sutton</p>
+                            </a>
+                            <p>$318.75</p>
+                        </div>
+                        <div class="product-quick-view">
+                            <img src="./images/Bulova/bulova-wilton-gmt.jpg" alt="Wilton GMT from https://www.bulova.com/us/en/collection/mens/">
+                            <a href="./details.html">
+                                <p>Wilton GMT</p>
+                            </a>
+                            <p>$671.25</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <h3>Longines</h3>
+                    <hr>
+                    <h3>Orient</h3>
+                    <hr>
+                    <h3>Omega</h3>
+                    <hr>
+                    <h3>Seiko</h3>
+                    <hr>
+                    <h3>Tissot</h3>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-contact">
+                <h5>Contact</h5>
+                <p>Email: contact@21jewels.com</p>
+                <p>Phone: 1 (919) 704-1011</p>
+            </div>
+            <div class="footer-social-media">
+                <h5>Socials</h5>
+                <p>Meta</p>
+                <p>Instagram</p>
+                <p>YouTube</p>
+                <p>X</p>
+                <p>Watch Geeks</p>
+            </div>
+            <div class="footer-copyright">
+                <h3><span class="copyright">&#169;</span> 21 Jewels</h3>
+                <p><a href="./home.html">Want to sell your watch?</a></p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
