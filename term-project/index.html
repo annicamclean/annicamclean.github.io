@@ -2,55 +2,66 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Splash Page</title>
-    <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Cormorant+Garamond' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Crimson+Pro' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Explora' rel='stylesheet'>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Watch Website</title>
+	<link rel="stylesheet" href="./styles/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="script.js" defer></script>
+	<link href='https://fonts.googleapis.com/css?family=Cormorant+Garamond' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Crimson+Pro' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Explora' rel='stylesheet'>
 </head>
 
 <body>
-    <div class="bg">
-        <header>
-            <h1><span class="word-number">21</span> JEWELS</h1>
-            <div class="top-nav">
-                <a href="./home.html">About</a>
-                <a href="./home.html">Login</a>
-                <form role="search">
-                    <input type="text" placeholder="Search.." aria-label="Search through site content">
-                    <button type="submit" class="search-button">
-                        <i class="fa fa-search"></i>
-                    </button>
-                </form>
-                <img src="./images/menu.png" alt="menu" class="menu-icon" onclick="toggleSplashMenu()">
-            </div>
-        </header>
-        <main>
-            <div class="colmun-1">
-                <h2 class="catch">The place to <span class="word-services">buy</span>, <span
-                        class="word-services">sell</span>, and <span class="word-services">service</span> </h2>
-                <div class="break"></div>
-                <h2 class="catch"> <span class="word-modern">modern</span> and <span class="word-vintage">vintage</span>
-                    watches</h2>
-                <div class="break"></div>
-                <div class="bottom-nav">
-                    <a href="./home.html">Home</a>
-                    <a href="./home.html">Brands</a>
-                    <a href="./home.html">Vintage</a>
-                    <a href="./home.html">Style</a>
-                    <a href="./home.html">Service</a>
-                </div>
-            </div>
-            <div class="column-2">
-                <div class="omega-splash">
+	<div class="home">
+		<header>
+			<h1><a href="./home.html" id="title"><span class="word-21">21</span> Jewels</a></h1>
+			<div class="lcsContainer">
+				<a class="lcs-login" href="./home.html"><i class="fa fa-user-circle-o"></i></a>
+				<a class="lcs-cart" href="./cart.html"><i class="fa fa-shopping-cart"></i></a>
+				<form role="search">
+					<input type="text" placeholder="Search.." aria-label="Search through site content">
+					<a class="lcs-search" href="./home.html"><i class="fa fa-search"></i></a>
+
+				</form>
+				<img src="./images/menu.png" alt="menu" class="menu-icon">
+			</div>
+		</header>
+		<nav class="webpage-nav">
+			<div class="large-screen">
+				<a href="./products.html">Brands</a>
+				<a href="./products.html">Style</a>
+				<a href="./index.html">Home</a>
+				<a href="./products.html">Vintage</a>
+				<a href="./index.html">Service</a>
+			</div>
+			<div class="small-screen">
+				<a href="./products.html">Brands</a>
+				<a href="./products.html">Style</a>
+				<a href="./index.html">Home</a>
+				<a href="./products.html">Vintage</a>
+				<a href="./index.html">Service</a>
+				<a href="./index.html">Login/Sign-up</a>
+				<a href="./cart.html">Shopping Cart</a>
+				<!--<form role="search" class="mobile-view-header">
+				<input type="text" class="mobile-view-header" placeholder="Search.."
+					aria-label="Search through site content">
+			</form>-->
+			</div>
+		</nav>
+		<main>
+			<div class="home-column1">
+				<h2>The place to <span class="word-services">buy</span>, 
+					<span class="word-services">sell</span>, and <span class="word-services">service</span> <span class="word-modern">modern</span> and <span class="word-vintage">vintage</span> watch</h2>
+			</div>
+			<div class="home-column2">
+				<div class="omega-splash">
                     <a href="./home.html"><img src="./images/omega-watch.jpg" alt="omega seamaster">
                     <p>Checkout our Omega Collection</p></a>
                 </div>
-                <div class="tissot-splash">
+                <!--<div class="tissot-splash">
                     <a href="./home.html"><img src="./images/tissot-watch.jpg" alt="tissot watch">
                     <p>Checkout our Tissot Collection</p></a>
                 </div>
@@ -61,11 +72,29 @@
                 <div class="service-splash">
                     <a href="./home.html"> <img src="./images/watch-repair.jpg" alt="Watch movement and repair goggles">
                     <p>Is your watch in need of a service?</p></a>
-                </div>
+                </div>-->
+			</div>
+		</main>
+		<footer>
+            <div class="footer-contact">
+                <h5>Contact</h5>
+                <p>Email: contact@21jewels.com</p>
+                <p>Phone: 1 (919) 704-1011</p>
             </div>
-        </main>
-    </div>
-    <script src="script.js"></script>
+            <div class="footer-social-media">
+                <h5>Socials</h5>
+                <p>Meta</p>
+                <p>Instagram</p>
+                <p>YouTube</p>
+                <p>X</p>
+                <p>Watch Geeks</p>
+            </div>
+            <div class="footer-copyright">
+                <h3><span class="copyright">&#169;</span> 21 Jewels</h3>
+                <p><a href="./index.html">Want to sell your watch?</a></p>
+            </div>
+        </footer>
+	</div>
 </body>
 
 </html>

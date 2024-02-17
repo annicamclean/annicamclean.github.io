@@ -111,13 +111,6 @@ h1 {
 
 .home main {
     display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
-.home main p {
-    font-size: 130px;
-    text-align: center;
 }
 
 body, html {
@@ -125,106 +118,35 @@ body, html {
     margin: 0;
 }
 
-.bg {
-    background-image: url("../images/watch-background.png");
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
-.bg main {
-    height: 90%;
-    width: 100%;
-    display: flex;
-    align-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-.column-1 {
+.home-column1 {
     width: 50%;
     display: flex;
     justify-content: center;
-    padding-top: 30px;
+    align-items: center;
 }
 
-.column-2 {
+.home-column2 {
     width: 50%;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
 }
 
-.bg h2 {
+.home h2 {
     font-size: 50px;
     text-align: center;
     margin-top: -30px;
 }
 
-.bottom-nav {
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 50px;
-}
-
-.bottom-nav a {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.break {
-    flex-basis: 100%;
-    height: 0;
-}
-
-.bg header {
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.bg h1 {
-    color: #0d0d0d;
-    font-size: 30px;
-    font-weight: bold;
-}
 
 .menu-icon {
     width: 40px;
     cursor: pointer;
     display: none;
     text-align: right;
-}
-
-.top-nav {
-    display: flex;
-    flex: 1;
-    justify-content: end;
-    align-items: center;
-    padding: 0px 50px;
-}
-
-.top-nav a {
-    display: flex;
-    justify-self: space-between;
-    text-decoration: none;
-}
-
-.top-nav a, .bottom-nav a {
-    color: #ccccc8;
-    font-size: 22px;
-    background-color: #0d0d0d;
-    margin: 10px 15px;
-    text-decoration: none;
-    border: 2px solid #ccccc8;
-    border-radius: 7px;
-    padding: 5px;
-}
-
-.top-nav a:hover, .bottom-nav a:hover {
-    background-color: #ccccc8;
-    color: #769ca3;
 }
 
 .search-button {
@@ -234,18 +156,6 @@ body, html {
     color: #fff;
     cursor: pointer;
     font-size: 20px;
-}
-
-.top-nav input {
-    background-color: transparent;
-    border: 3px solid #769ca3;
-    border-right: none;
-    border-left: none;
-    border-top: none;
-    outline: none;
-    height: 30px;
-    width: 78%;
-    font-family: "Cormorant Garamond", "Crimson Pro", "Lora", sans-serif;
 }
 
 .word-modern {
@@ -268,14 +178,6 @@ body, html {
     font-size: 45px;
 }
 
-.column-2 {
-    display: flex;
-    flex: 1;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-content: end;
-    justify-content: center;
-}
 
 .omega-splash {
     display: flex;
@@ -287,60 +189,17 @@ body, html {
 }
 
 .omega-splash img {
-    height: 150px;
+    height: 70%;
+    width: 80%;
 }
 
-.tissot-splash {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    margin: 30px;
-    text-align: center;
-    align-content: start;
+.home-column2 a, .home-column2 p {
+    color: #0d0d0d;
+    text-decoration: none;
+    font-size: 30px;
 }
 
-.tissot-splash img {
-    height: 150px;
-}
-
-.seiko-splash {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    margin: 30px;
-    text-align: center;
-    align-content: start;
-}
-
-.seiko-splash img {
-    height: 190px;
-}
-
-.service-splash {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    margin: 30px;
-    text-align: center;
-    align-content: start;
-}
-
-.service-splash img {
-    height: 190px;
-}
-
-.column-2 a {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
-.column-2 a p {
-    color: white;
-    font-size: 15px;
-}
-
-.column-2 a:hover p {
+.home-column2 a:hover p {
     color: #769ca3;
 }
 
@@ -401,6 +260,10 @@ footer a:hover {
     height: 100%
 }
 
+.main-picture img {
+    padding-top: 50px;
+}
+
 .details .information {
     width: 40%;
     height: 100%;
@@ -409,6 +272,10 @@ footer a:hover {
 .details .main-picture img {
     width: 70%;
     height: 100%;
+}
+
+.details p {
+    font-family: "Crimson Pro", "Lora", sans-serif;
 }
 
 .add-to-cart input {
@@ -425,48 +292,26 @@ footer a:hover {
     text-align: center;
 }
 
-.circle {
-    height: 35px;
-    width: 35px;
-    border-radius: 50%;
-    margin: 10px;
+.add-to-cart button {
+    background-color: #769ca3;
+    color: #ccccc8;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
 }
 
-.bambino-gold {
-    background: linear-gradient(
-        to right,
-        #fdd017  0%, #fdd017 50%,
-        white 50%, white 100%
-    );
-}
-
-.bambino-silver {
-    background: linear-gradient(
-        to right,
-        #c0c0c0  0%, #c0c0c0 50%,
-        white 50%, white 100%
-    );
-}
-
-.bambino-cream {
-    background: linear-gradient(
-        to right,
-        #c0c0c0  0%, #c0c0c0 50%,
-        #DDD3C9 50%, #DDD3C9 100%
-    );
-}
-
-.bambino-black {
-    background: linear-gradient(
-        to right,
-        #c0c0c0  0%, #c0c0c0 50%,
-        black 50%, black 100%
-    );
-}
-
-.similar-styles {
+.similar-watches {
     display: flex;
+    justify-content: space-evenly;
 }
+
+.similar-watches img {
+    width: 40%;
+    padding: 10px;
+    border: 2px solid #0d0d0d;
+}
+
+
 
 .shopping-cart-heading {
     text-align: center;
@@ -597,9 +442,19 @@ footer a:hover {
     text-align: center;
 }
 
+.products h2 {
+    font-size: 50px;
+}
+
+.products h3 {
+    font-size: 40px;
+    font-weight: 900;
+}
+
 .brand-filter {
     display: flex;
     justify-content: end;
+    font-family: "Crimson Pro", "Lora", sans-serif;
 }
 
 .brand-all-products {
@@ -609,13 +464,15 @@ footer a:hover {
 
 .brand-names {
     width: 15%;
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    background-color: #0d0d0d;
     margin: 50px;
     margin-right: 200px;
     margin-bottom: 100px;
+}
+
+.brand-names-container {
+    background-color: #0d0d0d;
+    display: flex;
+    flex-direction: column;
 }
 
 .brand-names a {
@@ -646,6 +503,9 @@ footer a:hover {
 
 .product-quick-view {
     margin: 10px;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .product-quick-view img{
@@ -657,6 +517,24 @@ footer a:hover {
     font-family: "Crimson Pro", "Lora", sans-serif;
     color: #0d0d0d;
     text-decoration: none;
+}
+
+.product-quick-view p {
+    font-size: 19px;
+}
+
+.product-quick-view a {
+    background-color: #769ca3;
+    padding: 10px;
+    border-radius: 3px;
+    border: 3px solid #0d0d0d;
+}
+
+.product-quick-view a:hover {
+    background-color: #5b6e74;
+    color: #c0c0c0;
+    border: #c0c0c0;
+    transition: .5s;
 }
 
 @media only screen and (max-width: 700px) {
