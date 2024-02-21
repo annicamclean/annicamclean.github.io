@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="./scripts/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Rock, Paper, Scissors Game</h1>
+    </header>
+    <main>
+        <section class="game-tracker">
+            <h2>Wins/Losses/Ties</h2>
+            <p id="game-counter">Wins: 0 Losses: 0 Ties: 0</p>
+            <button id="reset-counter">Reset Wins/Losses/Ties</button>
+            <button id="play-again" class="hide">Play Again</button>
+        </section>
+        <section class="player-throw">
+            <h2>Your Choice</h2>
+            <div>
+                <img id="rock" class="not-chosen" src="./images/rock.PNG" alt="rock">
+                <img id="paper" class="not-chosen" src="./images/paper.PNG" alt="paper">
+                <img id="scissors" class="not-chosen" src="./images/scissors.PNG" alt="scissors">
+            </div>
+        </section>
+        <section class="computer-throw">
+            <h2>Computer's Choice</h2>
+            <img id="computer-choice" class="not-chosen" src="./images/question-mark.PNG" alt="question-mark">
+        </section>
+        <section class="outcome">
+            <h2>The Results</h2>
+            <p id="results"></p>
+        </section>
+    </main>
+</body>
+</html>
