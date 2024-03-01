@@ -17,7 +17,7 @@
         document.getElementById("new-item").classList.add('hide');
         let x = document.getElementById('product-id-names');
         //the actual option name
-        if(x.value !== "no-option") {
+        if(x.value != "no-option") {
         let text = x.options[x.selectedIndex].text;
         //the Product ID
         let y = x.value;
