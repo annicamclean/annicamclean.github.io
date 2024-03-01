@@ -5,7 +5,7 @@
      * initiates page upon load
      */
     function init() {
-        document.getElementById("menu-icon-button").addEventListener('click', toggleAllMenu);
+        //document.getElementById("menu-icon-button").addEventListener('click', toggleAllMenu);
     }
     let smallScreenHidden = true;
 
