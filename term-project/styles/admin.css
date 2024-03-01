@@ -1,0 +1,115 @@
+body {
+    font-family: "Cormorant Garamond", "Crimson Pro", "Lora", sans-serif;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+
+span {
+    font-size: 53px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p, label {
+    font-size: 20px;
+}
+
+select {
+    font-size: 15px;
+}
+
+.product-edit header, .bulk-upload header {
+    background-color: #0d0d0d;
+    height: 25%;
+    width: 100%;
+    color: #ccccc8;
+    display: flex;
+    justify-content: space-between;
+    
+    margin-top: -15px;
+    margin-left: -10px;
+    padding: 10px;
+}
+
+.product-edit nav, .bulk-upload nav {
+    background-color: #0d0d0d;
+    height: 5%;
+    width: 100%;
+    margin-top: -15px;
+    margin-left: -10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-edit nav a, .bulk-upload nav a {
+    color: #ccccc8;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.product-edit nav a:hover, .bulk-upload nav a:hover {
+    color: #769ca3;
+}
+
+button, .false-button {
+    background-color: #769ca3;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+button:hover, .false-button:hover {
+    background-color:  #5b6e74;
+    color: #ccccc8;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.bulk-upload main p{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+
+img {
+    width: 60%;
+}
+
+.bulk-upload main img {
+    display: flex;
+    justify-items: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.bulk-upload main label {
+    display: flex;
+    justify-content: center;
+}
+
+.bulk-upload main form {
+    display: flex;
+    justify-content: center;
+}
+
+.json-picture {
+    width: 100%;
+    justify-content: center;
+}

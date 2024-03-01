@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulk Upload</title>
+    <link rel="stylesheet" href="./styles/admin.css">
+    <link href='https://fonts.googleapis.com/css?family=Cormorant+Garamond' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Crimson+Pro' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Explora' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="bulk-upload">
+        <!-- This holds the logo and name of page -->
+        <header>
+            <h1><span>21</span> Jewels</h1>
+            <h2>Bulk Upload</h2>
+        </header>
+        <!-- Holds the navigation -->
+        <nav>
+            <a href="./bulk-upload.html">Bulk Upload</a>
+            <a href="./product-edit.html">Product Edit</a>
+            <a href="#">Logout</a>
+        </nav>
+        <!-- Holds the image and place to upload the bulk product info -->
+        <main>
+            <p>How the File should look</p>
+            <div id="json-picture"><img src="./images/json-file-example.png" alt="JSON file example"></div>
+            <label for="my-file">Make sure you upload a .json, .csv, or .txt  file</label>
+            <form>
+                <input type="file" name="filename" accept=".json, .csv, .txt">
+                <input type="submit">
+            </form>
+        </main>
+    </div>
+</body>
+
+</html>

@@ -72,7 +72,7 @@ h1 {
     color: #0d0d0d;
 }
 
-.small-screen {
+#small-screen {
     display: none;
 }
 
@@ -141,8 +141,12 @@ body, html {
     margin-top: -30px;
 }
 
+#menu-icon-button {
+    background-color: transparent;
+    border: none;
+}
 
-.menu-icon {
+#menu-icon {
     width: 40px;
     cursor: pointer;
     display: none;
@@ -537,9 +541,17 @@ footer a:hover {
     transition: .5s;
 }
 
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
 @media only screen and (max-width: 700px) {
 
-    .menu-icon {
+    #menu-icon {
         display: block;
     }
 
@@ -551,7 +563,7 @@ footer a:hover {
         display: none;
     }
 
-    .small-screen {
+    #small-screen {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -562,7 +574,7 @@ footer a:hover {
         background-color: #769ca3;
     }
 
-    .small-screen a {
+    #small-screen a {
         color: #0d0d0d;
         font-size: 22px;
         display: flex;
@@ -623,4 +635,5 @@ footer a:hover {
     .home footer h3 {
         font-size: 25px;
     }
+
 }

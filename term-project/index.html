@@ -7,7 +7,7 @@
 	<title>Watch Website</title>
 	<link rel="stylesheet" href="./styles/styles.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="script.js" defer></script>
+	<script src="./script/script.js" defer></script>
 	<link href='https://fonts.googleapis.com/css?family=Cormorant+Garamond' rel='stylesheet'>
 	<link href='https://fonts.googleapis.com/css?family=Crimson+Pro' rel='stylesheet'>
 	<link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
@@ -26,7 +26,7 @@
 					<a class="lcs-search" href="./home.html"><i class="fa fa-search"></i></a>
 
 				</form>
-				<img src="./images/menu.png" alt="menu" class="menu-icon">
+				<button id="menu-icon-button"><img src="./images/menu.png" alt="menu" id="menu-icon"></button>
 			</div>
 		</header>
 		<nav class="webpage-nav">
@@ -37,7 +37,7 @@
 				<a href="./products.html">Vintage</a>
 				<a href="./index.html">Service</a>
 			</div>
-			<div class="small-screen">
+			<div id="small-screen" class="hide">
 				<a href="./products.html">Brands</a>
 				<a href="./products.html">Style</a>
 				<a href="./index.html">Home</a>
@@ -54,7 +54,7 @@
 		<main>
 			<div class="home-column1">
 				<h2>The place to <span class="word-services">buy</span>, 
-					<span class="word-services">sell</span>, and <span class="word-services">service</span> <span class="word-modern">modern</span> and <span class="word-vintage">vintage</span> watch</h2>
+					<span class="word-services">sell</span>, and <span class="word-services">service</span> <span class="word-modern">modern</span> and <span class="word-vintage">vintage</span> watches</h2>
 			</div>
 			<div class="home-column2">
 				<div class="omega-splash">
@@ -92,6 +92,7 @@
             <div class="footer-copyright">
                 <h3><span class="copyright">&#169;</span> 21 Jewels</h3>
                 <p><a href="./index.html">Want to sell your watch?</a></p>
+				<a href="./product-edit.html">Admin Pages</a>
             </div>
         </footer>
 	</div>
