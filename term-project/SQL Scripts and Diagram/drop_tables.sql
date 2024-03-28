@@ -1,0 +1,10 @@
+DROP TABLE similarProducts;
+DROP TABLE cartProducts;
+DROP TABLE watchServices;
+DROP TABLE products;
+DROP TABLE carts;
+DROP TABLE services;
+DROP TABLE discounts;
+DROP TABLE types;
+DROP TABLE categories;
+DROP TABLE users;
