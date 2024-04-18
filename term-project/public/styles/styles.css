@@ -126,6 +126,7 @@ body, html {
     align-items: center;
 }
 
+
 .home-column2 {
     width: 50%;
     display: flex;
@@ -137,8 +138,9 @@ body, html {
 
 .home h2 {
     font-size: 50px;
+    width: 70%;
     text-align: center;
-    margin-top: -30px;
+    margin-top: 30px;
 }
 
 #menu-icon-button {
@@ -335,7 +337,7 @@ footer a:hover {
     width: 100%;
     height: fit-content;
     display: flex;
-    align-items: end;
+    align-items: start;
     background-color: #0d0d0d;
 }
 
@@ -360,9 +362,10 @@ footer a:hover {
 }
 
 .items-in-cart {
-    height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .item-name-and-pic, .the-price, .the-quantity, .total-x {
@@ -373,6 +376,13 @@ footer a:hover {
 
 .item-name-and-pic {
     display: flex;
+}
+
+.cart main a {
+    color: #0d0d0d;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
 }
 
 .item-name-and-pic img {
@@ -391,18 +401,16 @@ footer a:hover {
     padding-right: 10px;
 }
 
-.the-quantity input {
+.the-quantity {
+    display: flex;
+    align-items: center;
+}
+
+.the-quantity h5 {
     background-color: transparent;
-    border: 3px solid #769ca3;
-    border-right: none;
-    border-left: none;
-    border-top: none;
-    outline: none;
-    height: 50px;
-    width: 10%;
     font-family: "Crimson Pro", "Lora", sans-serif;
     font-size: 30px;
-    text-align: center;
+    padding: 0% 20%;
 }
 
 .checkout {
@@ -455,28 +463,64 @@ footer a:hover {
     font-weight: 900;
 }
 
+.login-signup {
+    width: 100%;
+}
+
+.login-signup main label{
+    font-size: 20px;
+}
+
+.login-signup h2 {
+    font-size: 30px;
+}
+
+.login-signup main input {
+    width: 100%;
+    font-size: 200%;
+    border-radius: 10px;
+    border: 3px solid #0d0d0d;
+    background-color: #c0c0c0;
+}
+
+.login-signup main button {
+    background-color: #c0c0c0;
+    font-size: 30px;
+    margin: 3%;
+    padding: 1%;
+    border: 3px solid #0d0d0d;
+    border-radius: 15px;
+}
+
+.login-box, .signup-box {
+    width: 60%;
+    margin: 10%;
+}
+
+#login-container, #signup-container {
+    border-radius: 5px;
+    background-color: #769ca3;
+    width: 100%;
+    padding: 15%;
+}
+
 .brand-filter {
     display: flex;
     justify-content: end;
     font-family: "Crimson Pro", "Lora", sans-serif;
 }
 
-.brand-all-products {
-    width: 100%;
-    display: flex;
-}
-
 .brand-names {
-    width: 15%;
-    margin: 50px;
-    margin-right: 200px;
-    margin-bottom: 100px;
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
 }
 
 .brand-names-container {
+    width: 100%;
     background-color: #0d0d0d;
     display: flex;
-    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .brand-names a {

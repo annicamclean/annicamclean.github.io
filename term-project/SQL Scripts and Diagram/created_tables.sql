@@ -1,9 +1,10 @@
 CREATE TABLE "users" (
 	"id"	INTEGER NOT NULL UNIQUE,
-	"time"	NUMERIC NOT NULL,
+	"time"	DATETIME DEFAULT CURRENT_TIMESTAMP,
 	"name"	TEXT NOT NULL,
 	"email"	TEXT NOT NULL UNIQUE,
 	"userType"	TEXT NOT NULL,
+	"googleId" TEXT NOT NULL UNIQUE,
 	PRIMARY KEY("id" AUTOINCREMENT)
 );
 
@@ -23,8 +24,8 @@ CREATE TABLE "types" (
 
 CREATE TABLE "discounts" (
 	"id"	INTEGER NOT NULL UNIQUE,
-	"sDate"	NUMERIC NOT NULL,
-	"eDate"	NUMERIC,
+	"sDate"	DATETIME DEFAULT CURRENT_TIMESTAMP,
+	"eDate"	DATETIME,
 	"discountAmount"	REAL NOT NULL,
 	"title"	TEXT NOT NULL,
 	"type"	TEXT NOT NULL,
@@ -35,19 +36,19 @@ CREATE TABLE "discounts" (
 CREATE TABLE "services" (
 	"id"	INTEGER NOT NULL UNIQUE,
 	"status"	TEXT NOT NULL,
-	"watchRec"	NUMERIC,
-	"watchRet"	NUMERIC,
-	"user-id"	INTEGER NOT NULL,
-	FOREIGN KEY("user-id") REFERENCES "users"("id"),
+	"watchRec"	DATETIME DEFAULT CURRENT_TIMESTAMP,
+	"watchRet"	DATETIME,
+	"userId"	INTEGER NOT NULL,
+	FOREIGN KEY("userId") REFERENCES "users"("id"),
 	PRIMARY KEY("id" AUTOINCREMENT)
 );
 
 CREATE TABLE "carts" (
 	"id"	INTEGER NOT NULL UNIQUE,
 	"status"	TEXT NOT NULL,
-	"createDate"	NUMERIC NOT NULL,
-	"user-id"	INTEGER NOT NULL,
-	FOREIGN KEY("user-id") REFERENCES "users"("id"),
+	"createDate"	DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL,
+	"userId"	INTEGER NOT NULL,
+	FOREIGN KEY("userId") REFERENCES "users"("id"),
 	PRIMARY KEY("id" AUTOINCREMENT)
 );
 
@@ -55,9 +56,10 @@ CREATE TABLE "products" (
 	"id"	INTEGER NOT NULL UNIQUE,
 	"name"	TEXT NOT NULL,
 	"description"	TEXT NOT NULL,
-	"category-id"	INTEGER NOT NULL,
-	"type-id"	INTEGER NOT NULL,
+	"categoryId"	INTEGER NOT NULL,
+	"typeId"	INTEGER NOT NULL,
 	"image"	TEXT NOT NULL,
+	"alt" TEXT NOT NULL,
 	"price"	REAL NOT NULL,
 	"reference"	TEXT NOT NULL,
 	"cSize"	REAL NOT NULL,
@@ -77,8 +79,9 @@ CREATE TABLE "products" (
 	"pReserve"	TEXT NOT NULL,
 	"vintage"	TEXT NOT NULL,
 	"featured"	TEXT NOT NULL,
-	FOREIGN KEY("category-id") REFERENCES "categories"("id"),
-	FOREIGN KEY("type-id") REFERENCES "types"("id"),
+	"inStock"	INTEGER NOT NULL,
+	FOREIGN KEY("categoryId") REFERENCES "categories"("id"),
+	FOREIGN KEY("typeId") REFERENCES "types"("id"),
 	PRIMARY KEY("id" AUTOINCREMENT)
 );
 
@@ -86,18 +89,18 @@ CREATE TABLE "watchServices" (
 	"id"	INTEGER NOT NULL UNIQUE,
 	"watch"	TEXT NOT NULL,
 	"watchService"	TEXT NOT NULL,
-	"service-id"	INTEGER NOT NULL,
-	FOREIGN KEY("service-id") REFERENCES "services"("id"),
+	"serviceId"	INTEGER NOT NULL,
+	FOREIGN KEY("serviceId") REFERENCES "services"("id"),
 	PRIMARY KEY("id" AUTOINCREMENT)
 );
 
 CREATE TABLE "cartProducts" (
 	"id"	INTEGER NOT NULL UNIQUE,
-	"cart-id"	INTEGER NOT NULL,
-	"product-id"	INTEGER NOT NULL,
+	"cartId"	INTEGER NOT NULL,
+	"productId"	INTEGER NOT NULL,
 	"quantity"	INTEGER NOT NULL,
-	FOREIGN KEY("product-id") REFERENCES "products"("id"),
-	FOREIGN KEY("cart-id") REFERENCES "carts"("id"),
+	FOREIGN KEY("productId") REFERENCES "products"("id"),
+	FOREIGN KEY("cartId") REFERENCES "carts"("id"),
 	PRIMARY KEY("id" AUTOINCREMENT)
 );
 
@@ -105,5 +108,5 @@ CREATE TABLE "similarProducts" (
 	"id"	INTEGER NOT NULL,
 	"image"	TEXT NOT NULL,
 	FOREIGN KEY("id") REFERENCES "products"("id"),
-	PRIMARY KEY("id" AUTOINCREMENT)
+	PRIMARY KEY("id")
 );

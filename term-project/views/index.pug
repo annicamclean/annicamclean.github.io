@@ -1,0 +1,27 @@
+include ./includes/links.pug
+
+body
+    .home
+        include ./includes/nav.pug
+        main
+            .home-colum1
+                h2
+                    | The place to 
+                    span.word-services buy
+                    | ,
+                    span.word-services sell
+                    | , and 
+                    span.word-services service 
+                    span.word-modern modern 
+                    | and 
+                    span.word-vintage vintage 
+                    | watches 
+            .home-column2
+                .omega-splash
+                    a(href="http://localhost:8000/watch/brand/Omega")
+                        img(
+                            alt="omega seamaster"
+                            src="/images/omega-watch.jpg"
+                        )
+                        p Checkout our Omgea Collection
+        include ./includes/footer.pug

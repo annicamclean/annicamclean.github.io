@@ -1,0 +1,282 @@
+include ./includes/admin-links.pug
+
+body.product-edit
+    // This holds the logo and name of page
+    include ./includes/admin-nav.pug    
+    main
+        // Holds all of the products in a list so it is easier to go through
+        .edit-item.show
+            h3 Edit Product
+            .product-ids
+                p#product-id-label2
+                p#product-id-label1
+                label(for='product-id-names') Product ID: 
+                select#product-id-names(name='proudct-id-names')
+                    option(value='no-option') Select A Watch
+                    option(value='01') Watch 1
+                    option(value='02') Watch 2
+                    option(value='03') Watch 3
+                    option(value='04') Watch 4
+                    option(value='05') Watch 5
+                    option(value='06') Watch 6
+                    option(value='07') Watch 7
+                    option(value='08') Watch 8
+                    option(value='09') Watch 9
+                    option(value='10') Watch 10
+                    option(value='11') Watch 11
+                    option(value='12') Watch 12
+                    option(value='13') Watch 13
+                    option(value='14') Watch 14
+                    option(value='15') Watch 15
+                    option(value='16') Watch 16
+                    option(value='17') Watch 17
+                    option(value='18') Watch 18
+                    option(value='19') Watch 19
+                    option(value='20') Watch 20
+                    option(value='21') Watch 21
+                    option(value='22') Watch 22
+                    option(value='23') Watch 23
+                    option(value='24') Watch 24
+                    option(value='25') Watch 25
+                    option(value='26') Watch 26
+                    option(value='27') Watch 27
+                    option(value='28') Watch 28
+                    option(value='29') Watch 29
+                    option(value='30') Watch 30
+                    option(value='31') Watch 31
+                    option(value='32') Watch 32
+                    option(value='33') Watch 33
+                    option(value='34') Watch 34
+                    option(value='35') Watch 35
+                    option(value='36') Watch 36
+                    option(value='37') Watch 37
+                    option(value='38') Watch 38
+                    option(value='39') Watch 39
+                    option(value='40') Watch 40
+                    option(value='41') Watch 41
+                    option(value='42') Watch 42
+                    option(value='43') Watch 43
+                    option(value='44') Watch 44
+                    option(value='45') Watch 45
+                    option(value='46') Watch 46
+                    option(value='47') Watch 47
+                    option(value='48') Watch 48
+                    option(value='49') Watch 49
+                    option(value='50') Watch 50
+                    option(value='51') Watch 51
+                    option(value='52') Watch 52
+                    option(value='53') Watch 53
+                    option(value='54') Watch 54
+                    option(value='55') Watch 55
+                    option(value='56') Watch 56
+                    option(value='57') Watch 57
+                    option(value='58') Watch 58
+                    option(value='59') Watch 59
+                    option(value='60') Watch 60
+                    option(value='61') Watch 61
+                    option(value='62') Watch 62
+                    option(value='63') Watch 63
+                    option(value='64') Watch 64
+                    option(value='65') Watch 65
+                    option(value='66') Watch 66
+                    option(value='67') Watch 67
+                    option(value='68') Watch 68
+                    option(value='69') Watch 69
+                    option(value='70') Watch 70
+                    option(value='71') Watch 71
+                    option(value='72') Watch 72
+                    option(value='73') Watch 73
+                    option(value='74') Watch 74
+                    option(value='75') Watch 75
+                    option(value='76') Watch 76
+                    option(value='77') Watch 77
+                    option(value='78') Watch 78
+                    option(value='79') Watch 79
+                    option(value='80') Watch 80
+                    option(value='81') Watch 81
+                    option(value='82') Watch 82
+                    option(value='83') Watch 83
+                    option(value='84') Watch 84
+                // This button will change the watch you are editing
+                button#selected-watch-id Select this Watch ID
+            // The form for the watch you are editing
+            form#product-edit-inputs.hide
+                label(for='name') Name:
+                input#name(type='text', name='name')
+                br
+                label(for='description') Description:
+                input#description(type='text', name='description')
+                br
+                label(for='category-id') Category ID:
+                input#category-id(type='text', name='category-id')
+                br
+                label(for='type-id') Type ID:
+                input#type-id(type='text', name='type-id')
+                br
+                label(for='alt') Alt:
+                input#img-path(type='text', name='alt')
+                br
+                label(for='img-path') Image Path:
+                input#img-path(type='text', name='img-path')
+                br
+                label(for='price') Price:
+                input#price(type='text', name='price')
+                br
+                label(for='similar-products') Similar Products (Enter Product IDs):
+                input#similar-products(type='text', name='similar-products')
+                br
+                p Specifications
+                label(for='reference') Reference:
+                input#reference(type='text', name='reference')
+                br
+                label(for='case-size') Case Size:
+                input#case-size(type='text', name='case-size')
+                br
+                label(for='case-height') Case Height:
+                input#case-height(type='text', name='case-height')
+                br
+                label(for='lug-to-lug') Lug to Lug:
+                input#lug-to-lug(type='text', name='lug-to-lug')
+                br
+                label(for='lug-width') Lug Width:
+                input#lug-width(type='text', name='lug-width')
+                br
+                label(for='crystal-type') Crystal Type:
+                input#crystal-type(type='text', name='crystal-type')
+                br
+                label(for='water-resistance') Water Resistance:
+                input#water-resistance(type='text', name='water-resistance')
+                br
+                label(for='movement-caliber') Movement Caliber:
+                input#movement-caliber(type='text', name='movement-caliber')
+                br
+                label(for='case') Case:
+                input#case(type='text', name='case')
+                br
+                label(for='case-back') Case Back:
+                input#case-back(type='text', name='case-back')
+                br
+                label(for='crown') Crown:
+                input#crown(type='text', name='crown')
+                br
+                label(for='dial-color') Dial Color:
+                input#dial-color(type='text', name='dial-color')
+                br
+                label(for='strap') Strap:
+                input#strap(type='text', name='strap')
+                br
+                label(for='bezel') Bezel:
+                input#bezel(type='text', name='bezel')
+                br
+                label(for='jewels') Jewels:
+                input#jewels(type='text', name='jewels')
+                br
+                label(for='power-reserve') Power Reserve:
+                input#power-reserve(type='text', name='power-reserve')
+                br
+                label(for='vintage') Vintage:
+                input#vintage2(type='text', name='vintage')
+                br
+                label(for='featured') Featured:
+                input#featured2(type='text', name='featured')
+                br
+                label(for='in-stock') In Stock(number):
+                input#featured2(type='text', name='in-stock')
+                br
+                input#change-btn.false-button(type='submit', value='Keep Changes')
+                input.false-button(type='reset', value='Reset')
+                br
+            // Changes from a watch you are editing to a watch you want to add
+            button#add-product-btn Add a new product
+        #new-item.hide
+            // Where you can create a new watch to add
+            h3 Add New Product
+            form#add-product
+                label(for='product-id2') Product ID:
+                input#product-id2(type='text', name='product-id')
+                br
+                label(for='name2') Name:
+                input#name2(type='text', name='name')
+                br
+                label(for='description2') Description:
+                input#description2(type='text', name='description')
+                br
+                label(for='category-id2') Category ID:
+                input#category-id2(type='text', name='category-id')
+                br
+                label(for='type-id2') Type ID:
+                input#type-id2(type='text', name='type-id2')
+                br
+                label(for='alt') Alt:
+                input#img-path(type='text', name='alt')
+                br
+                label(for='img-path2') Image Path:
+                input#img-path2(type='text', name='img-path')
+                br
+                label(for='price2') Price:
+                input#price2(type='text', name='price')
+                br
+                label(for='similar-products2') Similar Products (Enter Product IDs):
+                input#similar-products2(type='text', name='similar-products')
+                br
+                p Specifications
+                label(for='reference2') Reference:
+                input#reference2(type='text', name='reference')
+                br
+                label(for='case-size2') Case Size:
+                input#case-size2(type='text', name='case-size')
+                br
+                label(for='case-height2') Case Height:
+                input#case-height2(type='text', name='case-height')
+                br
+                label(for='lug-to-lug2') Lug to Lug:
+                input#lug-to-lug2(type='text', name='lug-to-lug')
+                br
+                label(for='lug-width2') Lug Width:
+                input#lug-width2(type='text', name='lug-width')
+                br
+                label(for='crystal-type2') Crystal Type:
+                input#crystal-type2(type='text', name='crystal-type')
+                br
+                label(for='water-resistance2') Water Resistance:
+                input#water-resistance2(type='text', name='water-resistance')
+                br
+                label(for='movement-caliber2') Movement Caliber:
+                input#movement-caliber2(type='text', name='movement-caliber')
+                br
+                label(for='case2') Case:
+                input#case2(type='text', name='case')
+                br
+                label(for='case-back2') Case Back:
+                input#case-back2(type='text', name='case-back')
+                br
+                label(for='crown2') Crown:
+                input#crown2(type='text', name='crown')
+                br
+                label(for='dial-color2') Dial Color:
+                input#dial-color2(type='text', name='dial-color')
+                br
+                label(for='strap2') Strap:
+                input#strap2(type='text', name='strap')
+                br
+                label(for='bezel2') Bezel:
+                input#bezel2(type='text', name='bezel')
+                br
+                label(for='jewels2') Jewels:
+                input#jewels2(type='text', name='jewels')
+                br
+                label(for='power-reserve2') Power Reserve:
+                input#power-reserve2(type='text', name='power-reserve')
+                br
+                label(for='vintage2') Vintage:
+                input#vintage2(type='text', name='vintage')
+                br
+                label(for='featured2') Featured:
+                input#featured2(type='text', name='featured')
+                br
+                label(for='in-stock') In Stock(number):
+                input#featured2(type='text', name='in-stock')
+                br
+                input#add-btn.false-button(type='submit', value='Add New Watch')
+                input.false-button(type='reset', value='Reset')
+                br

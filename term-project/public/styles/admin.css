@@ -24,7 +24,7 @@ select {
     font-size: 15px;
 }
 
-.product-edit header, .bulk-upload header {
+header {
     background-color: #0d0d0d;
     height: 25%;
     width: 100%;
@@ -37,7 +37,7 @@ select {
     padding: 10px;
 }
 
-.product-edit nav, .bulk-upload nav {
+nav {
     background-color: #0d0d0d;
     height: 5%;
     width: 100%;
@@ -49,7 +49,7 @@ select {
     align-items: center;
 }
 
-.product-edit nav a, .bulk-upload nav a {
+nav a {
     color: #ccccc8;
     padding: 10px;
     text-decoration: none;

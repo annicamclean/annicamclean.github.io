@@ -1,0 +1,26 @@
+include ./includes/links.pug
+
+body
+    .products
+        include ./includes/nav.pug
+        main
+            h2.product-title #{title}
+            include ./includes/product-filter.pug
+            .brands-all-products
+                .brand-names
+                    .brand-names-container
+                        for category in categories
+                            a(href=`http://localhost:8000/watch/brand/${category.category}`) #{category.category}
+                .brand-products
+                    for category in categories
+                        h3 #{category.category}
+                        .brand-sections
+                            for watch in watches
+                                if watch.categoryId === category.id
+                                    .product-quick-view
+                                        img(alt=`${watch.alt}` src=`${watch.image}`)
+                                        p #{watch.name}
+                                        p $#{watch.price}
+                                        a(href=`http://localhost:8000/watch/${watch.id}`) Full View
+                        hr
+        include ./includes/footer.pug 

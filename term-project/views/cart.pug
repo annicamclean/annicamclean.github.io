@@ -1,0 +1,55 @@
+include ./includes/links.pug
+
+body
+    .cart
+        include ./includes/nav.pug
+        main
+            - let total = 0;
+            - let subtotal = 0;
+            h2.shopping-cart-heading Shopping Cart
+            .cart-title
+                .cart-title-sections
+                    //Should be a for each loop
+                    h3 Products
+                .cart-title-sections
+                    h3 Price
+                .cart-title-sections
+                    h3 Quantity
+                .cart-title-sections
+                    h3 Total
+            hr
+            .products-in-cart
+            for item in cartItems
+                - let itemTotal = 0;
+                .items-in-cart
+                    .item-name-and-pic
+                        img(alt=`${item.alt}` src=`${item.image}`)
+                        p #{item.name}
+                    .the-price
+                        p $#{item.price}
+                    .the-quantity
+                        //button(id=`s${item.id}` class= 'sub')
+                        a(href=`http://localhost:8000/cart/sub/id/${item.id}/quantity/1`)
+                            i.fa.fa-minus
+                        h5 #{item.quantity}
+                        a(href=`http://localhost:8000/cart/adding/id/${item.id}/quantity/1`)
+                            i.fa.fa-plus
+                        - itemTotal = item.price * item.quantity;
+                        - subtotal += itemTotal;
+                    .total-x
+                        p $#{subtotal}
+                        a(href=`http://localhost:8000/cart/del/id/${item.id}`)
+                            i.fa.fa-times
+                hr
+            .checkout
+                .discount
+                    p Discount Code
+                    input.discount-code(type="text")
+                .final-price
+                    p Subtotal: $#{subtotal}
+                    - let taxes = subtotal * .065;
+                    p Tax: $#{taxes}
+                    p Shipping and Handling: $15
+                    - total = subtotal + taxes + 15;
+                    p Total: $#{total}
+        include ./includes/footer.pug

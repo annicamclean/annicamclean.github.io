@@ -1,0 +1,37 @@
+header
+    h1 
+        a#title(href="http://localhost:8000/home")
+            span.word-21 21
+            | Jewels
+    .lcsContainer
+        a.lcs-login(href="http://localhost:8000/login")
+            i.fa.fa-user-circle-o
+        a.lcs-cart(href="http://localhost:8000/cart/all")
+            i.fa.fa-shopping-cart
+        form(role="search")
+            input(
+                aria-label="Search through site content"
+                placerholder="Search..."
+                type="text")
+            a.lcs-search(href="/index.pug")
+                i.fa.fa-search
+        button#menu-icon-button
+            img#menu-icon(
+                alt="menu"
+                src="../public/images/menu.png"
+            )
+nav.webpage-nav
+    .large-screen
+        a(href="http://localhost:8000/watch/brand") Brands
+        a(href="http://localhost:8000/watch/style") Styles
+        a(href="http://localhost:8000/home") Home
+        a(href="http://localhost:8000/watch/all") Vintage
+        a(href="http://localhost:8000/home") Service
+    #small-screen.hide
+        a(href="http://localhost:8000/home") Home
+        a(href="http://localhost:8000/watch/brand") Brands
+        a(href="http://localhost:8000/watch/style") Styles
+        a(href="http://localhost:8000/watch/all") Vintage
+        a(href="http://localhost:8000/home") Service
+        a(href="http://localhost:8000/login") Login/Sign-Up
+        a(href="http://localhost:8000/home") Shopping Cart

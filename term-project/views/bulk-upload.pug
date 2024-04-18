@@ -1,0 +1,13 @@
+include ./includes/admin-links.pug
+
+body
+    .bulk-upload
+        include ./includes/admin-nav.pug
+        main
+            p How the File should look
+            #json-picture
+                img(src='/images/json-file-example.png', alt='JSON file example')
+            label Make sure you upload a .json, .csv, or .txt  file
+            form
+                input(type='file', name='filename', accept='.json, .csv, .txt')
+                input(type='submit')

@@ -6,7 +6,12 @@
      */
     function init() {
         document.getElementById("selected-watch-id").addEventListener('click', chooseItemEdit);
-        document.getElementById("add-product").addEventListener('click', addNewItem);
+        document.getElementById("add-product-btn").addEventListener('click', addNewItem);
+        let addButton = document.getElementById("add-btn");
+        addButton.addEventListener("click", function (e) {
+        e.preventDefault();
+        submitForm();
+    });
     }
 
     // makes it so the person knows what watch they are editing
@@ -26,6 +31,7 @@
         document.getElementById('product-edit-inputs').classList.add('show');
         document.getElementById('product-edit-inputs').classList.remove('hide');
         }
+        console.log("You can see this");
     }
 
     // allows the person to added a new watch
@@ -39,5 +45,24 @@
         document.getElementById("new-item").classList.add('show');
     }
 
+
+    function submitForm() {
+        let params = new FormData(document.getElementById("add-product")); // pass in entire form tag
+        let jsonBody = JSON.stringify(Object.fromEntries(params)); //make form data json string.
+        fetch("http://localhost:8000/admin/new", {
+            method: "POST",
+            headers: {
+                Accept: "application/json, text/plain, */*",
+                "Content-Type": "application/json",
+            },
+            body: jsonBody,
+        })
+            .then(refreshTable)
+            .catch(alert);
+    }
+
+    function refreshTable() {
+        document.getElementById("add-product").reset();
+    }
 
 })();
