@@ -46,7 +46,7 @@
         weatherDiv.appendChild(pic);*/
 
         //!!!!!!!!ADD BACK!!!!!!!!!!!!
-        //weatherFetch();
+        weatherFetch();
     }
 
 
