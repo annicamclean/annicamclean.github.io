@@ -1,0 +1,19 @@
+include ./includes/links.pug
+
+body
+    .products
+        include ./includes/nav.pug
+        main
+            h2.product-title #{title}
+            include ./includes/product-filter.pug
+            .brands-all-products
+                .brand-products
+                    .brand-sections
+                        for watch in watches
+                            .product-quick-view
+                                img(alt=`${watch.alt}` src=`${watch.image}`)
+                                p #{watch.type}
+                                p #{watch.name}
+                                p $#{(watch.price).toFixed(2)}
+                                a(href=`http://localhost:8000/watch/${watch.id}`) Full View
+        include ./includes/footer.pug 

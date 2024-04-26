@@ -7,6 +7,12 @@ function getAll() {
     return data;
 }
 
+function getAllById() {
+    let sql = "SELECT * FROM products ORDER BY id;";
+    const data = db.all(sql);
+    return data;
+}
+
 function getAllCategories() {
     let sql = "SELECT * FROM categories ORDER BY id;";
     const data = db.all(sql);
@@ -51,8 +57,25 @@ function createNew(params) {
     return item;
 }
 
+function getAllSWatches(id) {
+    console.log(id);
+    let sql = 'SELECT products.id, "simWatchId", "name", "description", "categoryId", "typeId", "image", "alt", "price", "reference", "cSize", "cHeight", "lugToLug", "lWidth", "crystalType", "wResistance", "mCaliber", "case", "cBack", "crown", "dialColor", "strap", "bezel", "jewels", "pReserve", "vintage", "featured", "inStock" FROM similarProducts, products WHERE productId = ? and similarProducts.simWatchId = products.id;';
+    let watches = db.all(sql, id);
+    console.log(watches);
+    console.log(sql);
+    return watches;
+}
+
+function search(params) {
+    let term = "?";
+    let sql = `SELECT * FROM products, categories, types WHERE name LIKE ${term} or category LIKE ${term} or type LIKE ${term};`;
+    let menu = db.all(sql, params);
+    return menu;
+};
+
 module.exports = {
     getAll,
+    search,
     getAllCategories,
     getAllTypes,
     getAllByCategory,
@@ -60,4 +83,6 @@ module.exports = {
     getAllByType,
     getOneById,
     createNew,
+    getAllById,
+    getAllSWatches,
 };

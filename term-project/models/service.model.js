@@ -68,12 +68,6 @@ function deleteById(id) {
     return response;
 }
 
-function updateCartStatus(id) {
-    let sql = "UPDATE carts SET status = 'purchased' WHERE id =?;";
-    const response = db.run(sql, id);
-    return response;
-}   
-
 module.exports = {
     getAll,
     getCart,
@@ -85,5 +79,4 @@ module.exports = {
     createNewCart,
     addToCart,
     createNew,
-    updateCartStatus,
 };

@@ -11,6 +11,31 @@ app.use(express.json());
 const modelC = require("../models/cart.model");
 const modelW = require("../models/watch.model");
 const modelU = require("../models/user.model");
+const modelS = require("../models/service.model");
+
+function services(req, res, next) {
+    req.session.returnTo = req.originalUrl;
+    console.log("req.session.returnTo: " + req.session.returnTo);
+    let user = modelU.getUserById(req.user.id);
+    console.log("user: " + user);
+    if (!user) {
+        console.log(req.user);
+        let googleId = String(req.user.id);
+        let name = String(req.user.displayName);
+        let email = String(req.user.emails[0].value);
+        let userType = "Shopper";
+        let params = [name, email, userType, googleId];
+        modelU.createNew(params);
+        user = modelU.getUserById(req.user.id);
+    }
+    
+    try {
+        res.render("service", {title: "Services"});
+    } catch (err) {
+        console.error("Error while getting menu ", err.message);
+        next(err);
+    }
+}
 
 
 function getAll(req, res, next) {
@@ -38,37 +63,6 @@ function getAll(req, res, next) {
         console.error("Error while getting menu ", err.message);
         next(err);
     }
-}
-
-function checkingOut(req, res, next) {
-    console.log("Start");
-    req.session.returnTo = req.originalUrl;
-    console.log("req.session.returnTo: " + req.session.returnTo);
-    let user = modelU.getUserById(req.user.id);
-    console.log("user: " + user);
-    if (!user) {
-        console.log(req.user);
-        let googleId = String(req.user.id);
-        let name = String(req.user.displayName);
-        let email = String(req.user.emails[0].value);
-        let userType = "Shopper";
-        let params = [name, email, userType, googleId];
-        modelU.createNew(params);
-        user = modelU.getUserById(req.user.id);
-    }
-    let cartItems = getOneCartsProducts(user);
-    let cart = modelC.getOneById(user.id);
-    if (!cart || cart.status === "new") {
-        cart = modelC.updateCartStatus(cart.id);
-    }
-    try {
-        res.render("checkout", { title: 'Checkout', user: user, cartItems: cartItems });
-        // res.json(meals);
-    } catch (err) {
-        console.error("Error while getting menu ", err.message);
-        next(err);
-    }
-
 }
 
 /*function getCart(req, res, next) {
@@ -301,5 +295,5 @@ module.exports = {
     subItem,
     getOneById,
     createNew,
-    checkingOut,
+    services,
 };

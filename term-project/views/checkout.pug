@@ -6,20 +6,10 @@ body
         main
             - let total = 0;
             - let subtotal = 0;
-            h2.shopping-cart-heading Shopping Cart
-            .cart-title
-                .cart-title-sections
-                    //Should be a for each loop
-                    h3 Products
-                .cart-title-sections
-                    h3 Price
-                .cart-title-sections
-                    h3 Quantity
-                .cart-title-sections
-                    h3 Total
-            hr
+            h2.shopping-cart-heading #{title}
             .products-in-cart
             for item in cartItems
+                h3 You Bought
                 - let itemTotal = 0;
                 .items-in-cart
                     .item-name-and-pic
@@ -28,23 +18,12 @@ body
                     .the-price
                         p $#{(item.price).toFixed(2)}
                     .the-quantity
-                        //button(id=`s${item.id}` class= 'sub')
-                        a(href=`http://localhost:8000/cart/sub/id/${item.id}/quantity/1`)
-                            i.fa.fa-minus
                         h5 #{item.quantity}
-                        a(href=`http://localhost:8000/cart/adding/id/${item.id}/quantity/1`)
-                            i.fa.fa-plus
                         - itemTotal = (item.price * item.quantity)*100;
                         - subtotal += itemTotal;
                     .total-x
                         p $#{(itemTotal/100).toFixed(2)}
-                        a(href=`http://localhost:8000/cart/del/id/${item.id}`)
-                            i.fa.fa-times
-                hr
             .checkout
-                .discount
-                    p Discount Code
-                    input.discount-code(type="text")
                 .final-price
                     p Subtotal: $#{(subtotal/100).toFixed(2)}
                     - let taxes = subtotal * .065;
@@ -52,6 +31,4 @@ body
                     p Shipping and Handling: $15
                     - total = subtotal + taxes + 1500;
                     p Total: $#{(total/100).toFixed(2)}
-                    .checkout-btn
-                        a(href=`http://localhost:8000/cart/checkout`) CHECKOUT
         include ./includes/footer.pug

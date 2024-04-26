@@ -1,7 +1,13 @@
 INSERT INTO products (id, name, description, categoryId, typeId, image, alt, price, reference, cSize, 
 	cHeight, lugToLug, lWidth, crystalType, wResistance, mCaliber, "case", cBack, crown, dialColor, strap, bezel, jewels, pReserve,
 	vintage, featured, inStock)
-VALUES 
+VALUES
+	(85, "Omega Cosmic Moonphase", "This is a vintage Omega Cosmic Moonphase.", 8, 1, "/images/Vintage/omega-classic-vintage-watch-2639-9.png", "From https://farfo.com/vintage-wristwatches/omega-cosmic-moonphase-3944-solid-18k-gold-watch/", 8250.00, "3944", 32, 14, 44, 20, "Square Doomed Crystal", "30m", "Omega Caliber 381 (Omega 27DL PC AM), Swiss Made, Manual Wind Movement", "Gold", "Closed and Signed Case Back", "Push / Pull", "Cream", "Leather Strap", "Gold Stationary", 17, "Approximately 40 Hours", true, false, 1),
+	(86, "Grana Kurth Freres", "This is a vintage Grana Kurth Freres.", 8, 2, "/images/Vintage/grana-kurth-freres.png", "From https://farfo.com/vintage-wristwatches/grana-kurth-freres-stainless-steel-watch-certina-414/", 325.00, "1494", 30, 12, 36.5, 16, "Mineral Crystal", "100m", "Swiss Made, Certina Caliber 414, Manual Wind Movement", "Stainless Steel", "Screw down and Signed Case Back", "Push / Pull", "Patina", "Leather Strap", "Stainless Steel Stationary", 16, "Approximately 40 Hours", true, false, 1),
+	(87, "Omega Classic", "This is a vintage Omega Classic.", 8, 1, "/images/Vintage/omega-classic-vintage-watch-2639-9.png", "From https://farfo.com/vintage-wristwatches/omega-classic-vintage-watch-35mm-steel-case-1952/", 1500.00, "2639-9", 35, 13, 43, 18, "Sapphire Crystal", "30m", "Omega Caliber 266, Swiss Made, Manual Wind Movement.", "Stainless Steel", "Screw down and Signed Case Back", "Push / Pull", "Cream", "Leather Strap", "Stainless Steel Stationary", 17, "Approximately 40 Hours", true, false, 1),
+	(88, "Longines Tank Watch", "This is a vintage Longines Tank Watch.", 8, 1, "/images/Vintage/longines-14kvintage-tank-watch.png", "From https://farfo.com/vintage-wristwatches/longines-14k-solid-gold-mens-vintage-tank-watch-1952/", 1500.00, "None", 25, 9, 37.5, 18, "Doomed Mineral Crystal", "30m", "Longines Caliber 9LT, Swiss Made Manual Wind Movement.", "Gold", "Screw down and Signed Case Back", "Push / Pull", "White", "Leather Strap", "Gold Stationary", 17, "Approximately 40 Hours", true, false, 1),
+	(89, "Rolex Oyster Perpetual Date", "This is a vintage Rolex Oyster Perpetual Date.", 8, 1, "/images/Vintage/rolex-oyster-perpetual-1505-two-tone-silver.png", "From https://farfo.com/vintage-wristwatches/rolex-oyster-perpetual-date-two-tone-automatic-watch-circa-1971/", 1999.00, "1503 and 1 71", 33.5, 11, 42, 19, "Sapphire Crystal", "30m", "Rolex Caliber 1570, Seventeen Jewel Swiss Made Automatic Wind 26 Jewel Chronometer Movement Adjusted to 5 Positions and Temperature.", "Stainless Steel", "Screw down and Signed Case Back", "Push / Pull", "Silver", "Leather Strap", "Gold Stationary", 26, "Approximately 40 Hours", true, false, 1);
+	
 	(1, "A-11 Hack Watch","This is a pilot watch", 1, 2, "/images/Bulova/bulova-a11-hack-watch.png", "A-11 Hack Watch from https://www.bulova.com/us/en/collection/mens/", 337.50, "96A282", 37.0, 12, 45, 18, "Double Domed Mineral Crystal", "50m", "Miyota 82S0 3, Automatic, Hacking", "Stainless Steel", "Closed Case Back with Military Specs", "Push / Pull", "Blue", "Nylon", "Stainless Steel Stationary", 21, "Approximately 42 Hours", false, false, 29),
 	(2, "Banker", "This is a dress watch", 1, 1, "/images/Bulova/bulova-banker.png", "Banker from https://www.bulova.com/us/en/collection/mens/", 995.00, "96B328", 33, 13, 40, 20, "Double Domed Sapphire Crystal", "30m", "Sellita Caliber SW200, Automatic, Hacking", "Stainless Steel", "See-through Exhibition Case Back", "Push / Pull", "Beige", "Leather", "Stainless Steel Stationary", 26, "Approximately 38 hours", false, true, 60),
 	(3, "Chronograph", "This is a Chronograph watch", 1, 4, "/images/Bulova/bulova-chronograph.png", "Chronograph from https://www.bulova.com/us/en/collection/mens/", 2495.00, "96C146", 42, 10, 53, 22, "Domed Sapphire Crystal", "30m", "Sellita Caliber SW500", "Stainless Steel", "See-through Exhibition Case Back", "Push / Pull","Black", "Leather", "Stainless Steel Stationary", 25,"Approximately 48 - 62 Hours",false, false, 45),
@@ -60,3 +66,9 @@ INSERT INTO cartProducts
 VALUES
 	(1, 1, 1, 2);
 */
+
+INSERT INTO similarProducts
+VALUES
+	(1, 39, 43),
+	(2, 39, 47),
+	(3, 39, 26);

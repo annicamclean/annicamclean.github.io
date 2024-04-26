@@ -8,30 +8,31 @@ header
             i.fa.fa-user-circle-o
         a.lcs-cart(href="http://localhost:8000/cart/all")
             i.fa.fa-shopping-cart
-        form(role="search")
+        form(action="/search/term" method="get")
             input(
-                aria-label="Search through site content"
                 placerholder="Search..."
-                type="text")
-            a.lcs-search(href="/index.pug")
+                type="text"
+                name="term"
+                id="term")
+            //a.lcs-search(href="http://localhost:8000/watch/search")
                 i.fa.fa-search
         button#menu-icon-button
             img#menu-icon(
                 alt="menu"
-                src="../public/images/menu.png"
+                src="/images/menu.png"
             )
 nav.webpage-nav
     .large-screen
         a(href="http://localhost:8000/watch/brand") Brands
         a(href="http://localhost:8000/watch/style") Styles
         a(href="http://localhost:8000/home") Home
-        a(href="http://localhost:8000/watch/all") Vintage
-        a(href="http://localhost:8000/home") Service
-    #small-screen.hide
+        a(href="http://localhost:8000/watch/vintage") Vintage
+        a(href="http://localhost:8000/service/all") Service
+    #small-screen.no-show
         a(href="http://localhost:8000/home") Home
         a(href="http://localhost:8000/watch/brand") Brands
         a(href="http://localhost:8000/watch/style") Styles
-        a(href="http://localhost:8000/watch/all") Vintage
-        a(href="http://localhost:8000/home") Service
+        a(href="http://localhost:8000/watch/vintage") Vintage
+        a(href="http://localhost:8000/service/all") Service
         a(href="http://localhost:8000/login") Login/Sign-Up
         a(href="http://localhost:8000/home") Shopping Cart

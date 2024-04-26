@@ -16,11 +16,11 @@ body
                         h3 #{style.type}
                         .brand-sections
                             for watch in watches
-                                if watch.typeId === style.id
+                                if watch.typeId === style.id && watch.categoryId !== 8
                                     .product-quick-view
                                         img(alt=`${watch.alt}` src=`${watch.image}`)
                                         p #{watch.name}
-                                        p $#{watch.price}
+                                        p $#{(watch.price).toFixed(2)}
                                         a(href=`http://localhost:8000/watch/${watch.id}`) Full View
                         hr
         include ./includes/footer.pug 

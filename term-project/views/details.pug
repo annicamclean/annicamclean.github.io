@@ -4,10 +4,11 @@ body
     .details
         include ./includes/nav.pug
         main
+            -let itemQuantity = 1;
             .side-pictures
                 p
             .main-picture
-                img(alt=`${watch.alt}` src=`${watch.image}`)
+                img(alt=`${watch.alt}`, src=`${watch.image}`)
             .information
                 h2 #{watch.name}
                 h3
@@ -20,73 +21,64 @@ body
                         | In Stock
                     else
                         | Out Of Stock
-                p $#{watch.price}
+                p $#{(watch.price).toFixed(2)}
                 .add-to-cart
-                    i.fa.fa-minus
-                    input(
-                        class="details.quantity" 
-                        placeholder="1" 
-                        type="text"
-                        )
-                    i.fa.fa-plus
-                    .product-quick-view
-                        a(href=`http://localhost:8000/cart/add/id/${watch.id}/quantity/1`) Add to Cart
+                .product-quick-view
+                    a(href=`http://localhost:8000/cart/add/id/${watch.id}/quantity/1` id=submit-link) Add to Cart
+                if watch.categoryId !== 8 
                     h3 Similar Watches
                         .similar-watches
-                            a(href="#")
-                                img(alt="Orient Bambino Version 8 from https://www.orientwatchusa.com/collections/all" src="/images/Orient/orient-orient-bambino-version-8.png")
-                            a(href="#")
-                                img(alt="Orient Symphony III from https://www.orientwatchusa.com/collections/all" src="/images/Orient/orient-symphony-iii.png")
-                            a(href="#")
-                                img(alt="Helios from https://www.orientwatchusa.com/collections/all" src="/images/Orient/orient-helios.png")
-                    h3 Specifications
-                    .details-specification
-                        p
-                            b Reference
-                            | : #{watch.reference}
-                        p
-                            b Case Size
-                            | : #{watch.cSize}mm
-                        p
-                            b Case Height
-                            | : #{watch.cHeight}mm
-                        p
-                            b Lug To Lug
-                            | : #{watch.lugToLug}mm
-                        p
-                            b Lug Width
-                            | : #{watch.lWidth}mm
-                        p
-                            b Crystal Type
-                            | : #{watch.crystalType}
-                        p
-                            b Water Resistance
-                            | : #{watch.wResistance}
-                        p
-                            b Movement Caliber
-                            | : #{watch.mCaliber}
-                        p
-                            b Case
-                            | : #{watch.case}
-                        p
-                            b Case Back
-                            | : #{watch.cBack}
-                        p
-                            b Crown
-                            | : #{watch.crown}
-                        p
-                            b Dial Color
-                            | : #{watch.dialColor}
-                        p
-                            b Strap
-                            | : #{watch.strap}
-                        p
-                            b Bezel
-                            | : #{watch.bezel}
-                        p
-                            b Jewels
-                            | : #{watch.jewels} Jewels
-                        p
-                            b Power Reserve
-                            | : #{watch.pReserve}
+                            for item in similarProducts
+                                a(href=`http://localhost:8000/watch/${item.productId}`)
+                                    img(alt=`${item.alt}`, src=`${item.image}`)
+                h3 Specifications
+                .details-specification
+                    p
+                        b Reference
+                        | : #{watch.reference}
+                    p
+                        b Case Size
+                        | : #{watch.cSize}mm
+                    p
+                        b Case Height
+                        | : #{watch.cHeight}mm
+                    p
+                        b Lug To Lug
+                        | : #{watch.lugToLug}mm
+                    p
+                        b Lug Width
+                        | : #{watch.lWidth}mm
+                    p
+                        b Crystal Type
+                        | : #{watch.crystalType}
+                    p
+                        b Water Resistance
+                        | : #{watch.wResistance}
+                    p
+                        b Movement Caliber
+                        | : #{watch.mCaliber}
+                    p
+                        b Case
+                        | : #{watch.case}
+                    p
+                        b Case Back
+                        | : #{watch.cBack}
+                    p
+                        b Crown
+                        | : #{watch.crown}
+                    p
+                        b Dial Color
+                        | : #{watch.dialColor}
+                    p
+                        b Strap
+                        | : #{watch.strap}
+                    p
+                        b Bezel
+                        | : #{watch.bezel}
+                    p
+                        b Jewels
+                        | : #{watch.jewels} Jewels
+                    p
+                        b Power Reserve
+                        | : #{watch.pReserve}
             include ./includes/footer.pug

@@ -111,6 +111,10 @@ h1 {
 
 .home main {
     display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 body, html {
@@ -140,7 +144,6 @@ body, html {
     font-size: 50px;
     width: 70%;
     text-align: center;
-    margin-top: 30px;
 }
 
 #menu-icon-button {
@@ -282,6 +285,11 @@ footer a:hover {
 
 .details p {
     font-family: "Crimson Pro", "Lora", sans-serif;
+}
+
+.add-to-cart {
+    display: flex;
+    
 }
 
 .add-to-cart input {
@@ -504,6 +512,33 @@ footer a:hover {
     padding: 15%;
 }
 
+.api-filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#weather-api img {
+    width: 15%;
+}
+
+.in-a-line {
+    display: flex;
+    align-items: center;
+    margin-top: -50px;
+}
+
+.in-a-line h5, .in-a-line a {
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+.in-a-line a {
+    text-decoration: none;
+    color: #0d0d0d;
+
+}
+
 .brand-filter {
     display: flex;
     justify-content: end;
@@ -537,12 +572,14 @@ footer a:hover {
 
 
 .brand-products {
-    width: 85%;
+    width: 100%;
 }
 
 .brand-sections {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .brand-products h3 {
@@ -550,7 +587,7 @@ footer a:hover {
 }
 
 .product-quick-view {
-    margin: 10px;
+    margin: 2%;
     display: flex;
     flex-direction: column;
 
@@ -585,12 +622,33 @@ footer a:hover {
     transition: .5s;
 }
 
+.checkout a {
+    background-color: #769ca3;
+    padding: 7px;
+    border-radius: 3px;
+    border: 3px solid #0d0d0d;
+    text-decoration: none;
+}
+
+.checkout a:hover {
+    background-color: #5b6e74;
+    color: #c0c0c0;
+    border: #c0c0c0;
+    transition: .25s;
+}
+
 .hide {
     display: none;
 }
 
 .show {
     display: block;
+}
+
+.service {
+    border:3px solid #0d0d0d;
+    margin: 5%;
+    border-radius: 5px;
 }
 
 @media only screen and (max-width: 700px) {
@@ -629,6 +687,18 @@ footer a:hover {
 
     .large-screen {
         display: none;
+    }
+
+    .no-show {
+        display: none;
+    }
+
+    .hide {
+        display: none;
+    }
+    
+    .show {
+        display: block;
     }
 
     /*.webpage-nav {

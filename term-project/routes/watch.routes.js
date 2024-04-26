@@ -8,6 +8,8 @@ router.get("/all", watchcontroller.getAll);
 
 router.get("/brand", watchcontroller.getAllBrands);
 
+router.get("/vintage", watchcontroller.getAllVintage);
+
 router.get("/style", watchcontroller.getAllTypes);
 
 router.get("/category/:category", watchcontroller.getAllByCategory);
@@ -19,6 +21,8 @@ router.get("/style/:type", watchcontroller.getAllByType);
 router.get("/:id", watchcontroller.getOneById);
 
 router.post("/new", ensureAuth, watchcontroller.createNew);
+
+router.get("/search", watchcontroller.search);
 
 function ensureAuth(req, res, next) {
     req.session.returnTo = req.originalUrl;

@@ -4,20 +4,13 @@ body
     .products
         include ./includes/nav.pug
         main
-            -let typeId = 0;
             h2.product-title #{title}
             include ./includes/product-filter.pug
             .brands-all-products
-                .brand-names
-                    .brand-names-container
-                        for style in styles
-                            a(href=`http://localhost:8000/watch/style/${style.type}`) #{style.type}
-                            if style.type === title
-                                -typeId = style.id;
                 .brand-products
                     .brand-sections
                         for watch in watches
-                            if watch.typeId === typeId && watch.categoryId !== 8
+                            if watch.categoryId === 8
                                 .product-quick-view
                                     img(alt=`${watch.alt}` src=`${watch.image}`)
                                     p #{watch.type}

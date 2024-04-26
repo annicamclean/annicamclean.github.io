@@ -60,9 +60,15 @@ nav a {
     color: #769ca3;
 }
 
-button, .false-button {
+.false-button {
     background-color: #769ca3;
-    font-size: 15px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #769ca3;
+    width: fit-content;
     border-radius: 5px;
 }
 

@@ -6,6 +6,8 @@ const cartcontroller = require("../controllers/cart.controller");
 
 router.get("/all", ensureAuth, cartcontroller.getAll);
 
+router.get("/checkout", ensureAuth, cartcontroller.checkingOut);
+
 router.get("/:id", ensureAuth, cartcontroller.getOneById);
 
 router.post("/new", ensureAuth, cartcontroller.createNew);

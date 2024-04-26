@@ -8,6 +8,6 @@ body
             #json-picture
                 img(src='/images/json-file-example.png', alt='JSON file example')
             label Make sure you upload a .json, .csv, or .txt  file
-            form
-                input(type='file', name='filename', accept='.json, .csv, .txt')
-                input(type='submit')
+            form#bulk-form
+                input(type='file', id='json-file', name='filename', accept='.json, .csv, .txt')
+                button#bulk-btn(type='click', class="false-btn")

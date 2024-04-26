@@ -25,6 +25,8 @@ const watchRouter = require("./routes/watch.routes");
 const cartRouter = require("./routes/cart.routes");
 const adminRouter = require("./routes/admin.routes");
 const userRouter = require("./routes/user.routes");
+const searchRouter = require("./routes/search.routes");
+const serviceRouter = require("./routes/service.routes");
 
 app.get("/", (req, res) => {
     res.render('index');
@@ -38,10 +40,14 @@ app.get('/login', (req, res) => {
     res.render('login');
 });
 
+
+
 app.use('/admin', adminRouter);
 app.use("/watch", watchRouter);
 app.use("/cart", cartRouter);
 app.use("/user", userRouter);
+app.use("/search", searchRouter);
+app.use("/service", serviceRouter);
 
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views'));

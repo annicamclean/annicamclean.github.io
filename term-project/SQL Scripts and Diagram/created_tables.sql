@@ -106,7 +106,9 @@ CREATE TABLE "cartProducts" (
 
 CREATE TABLE "similarProducts" (
 	"id"	INTEGER NOT NULL,
-	"image"	TEXT NOT NULL,
-	FOREIGN KEY("id") REFERENCES "products"("id"),
+	"productId" INTEGER NOT NULL,
+	"simWatchId" INTEGER NOT NULL,
+	FOREIGN KEY("productId") REFERENCES "products"("id"),
+	FOREIGN KEY("simWatchId") REFERENCES "products"("id"),
 	PRIMARY KEY("id")
 );

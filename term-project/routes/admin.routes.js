@@ -4,13 +4,17 @@ const router = express.Router();
 
 const admincontroller = require("../controllers/admin.controller");
 
-router.get("/edit", ensureAuth, admincontroller.getProductEdit);
+router.get("/edit", admincontroller.getProductEdit);
 
-router.get("/upload", ensureAuth, admincontroller.getBulkUpload);
+router.get("/upload", admincontroller.getBulkUpload);
 
-router.get("/:id", ensureAuth, admincontroller.getOneById);
+router.get("/:id", admincontroller.getOneById);
 
-router.post("/new", ensureAuth, admincontroller.createNew);
+router.post("/new/item", admincontroller.createNew);
+
+router.post("/bulk", admincontroller.bulk);
+
+router.put("/update/id/:id",  admincontroller.update)
 
 function ensureAuth(req, res, next) {
     req.session.returnTo = req.originalUrl;
