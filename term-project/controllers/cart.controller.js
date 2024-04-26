@@ -98,7 +98,8 @@ function getOneCartsProducts(user) {
 
 function getCart(user) {
     let cart = modelC.getOneById(user.id);
-    if (!cart || cart.status !== "new") {
+    console.log(cart.id);
+    if (!cart || cart.status != "new") {
         let userId = user.id;
         let status = "new";
         let params = [status, userId];
@@ -155,11 +156,13 @@ function addToCart(req, res, next) {
     }
     let cart = getCart(user);
     let cartId = cart.id;
+    console.log("Cart ID: " + cartId);
     let productId = req.params.id;
     console.log("Product ID: " + productId);
     let quantity = req.params.quantity;
     console.log("Quantity ID: " + quantity);
     let params2 = [cartId, productId, quantity];
+    console.log(params2);
     let addedItem = modelC.addToCart(params2);
     console.log("Added Items " + addedItem);
     try {

@@ -23,14 +23,15 @@ body
                         | Out Of Stock
                 p $#{(watch.price).toFixed(2)}
                 .add-to-cart
-                .product-quick-view
-                    a(href=`http://localhost:8000/cart/add/id/${watch.id}/quantity/1` id=submit-link) Add to Cart
+                    .product-quick-view
+                        a(href=`http://localhost:8000/cart/add/id/${watch.id}/quantity/1` id=submit-link) Add to Cart
                 if watch.categoryId !== 8 
                     h3 Similar Watches
-                        .similar-watches
-                            for item in similarProducts
-                                a(href=`http://localhost:8000/watch/${item.productId}`)
-                                    img(alt=`${item.alt}`, src=`${item.image}`)
+                        //
+                            .similar-watches
+                                for item in similarProducts
+                                    a(href=`http://localhost:8000/watch/${item.productId}`)
+                                        img(alt=`${item.alt}`, src=`${item.image}`)
                 h3 Specifications
                 .details-specification
                     p

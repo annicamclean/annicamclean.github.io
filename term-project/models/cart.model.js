@@ -8,10 +8,11 @@ function getAll() {
 }
 
 function getOneById(id) {
-    let sql = "SELECT * FROM carts WHERE userId =? ;";
+    let sql = "SELECT * FROM carts WHERE userId =? and status = 'new';";
     const item = db.get(sql, id);
     return item;
 }
+
 
 function getOneByCartId(id) {
     let sql = 'SELECT cartProducts.id, "cartId", "productId", "quantity", "name", "description", "categoryId", "typeId", "image", "alt", "price", "reference", "cSize", "cHeight", "lugToLug", "lWidth", "crystalType", "wResistance", "mCaliber", "case", "cBack", "crown", "dialColor", "strap", "bezel", "jewels", "pReserve", "vintage", "featured", "inStock" FROM cartProducts, products WHERE cartId =? and cartProducts.productId = products.id;';
