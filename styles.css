@@ -1,0 +1,467 @@
+body {
+    width: 100%;
+    margin: 0px;
+    background-color: rgb(3, 23, 78);
+    font-family: 'Coda', Impact, sans-serif;
+}
+
+header {
+    padding: 1%;
+    display: flex;
+    justify-content: end;
+    align-content: center;
+    height: 10%;
+}
+
+nav {
+    width: 40%;
+    padding: 3%;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+nav a {
+    color: aliceblue;
+    text-decoration: none;
+    margin: 1%;
+}
+
+nav a:hover {
+    color: rgb(32, 122, 201);
+    transition: .2s;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 90%;
+}
+
+.tile {
+    background: rgb(64,127,255);
+    background: linear-gradient(118deg, rgba(64,127,255,1) 0%, rgba(57,127,250,1) 32%, rgba(2,18,142,1) 100%);
+    color: aliceblue;
+    margin: 1%;
+    padding: 2%;
+    border-radius: 30px;
+    min-width: fit-content;
+}
+
+#top-home, #top-about {
+    padding-top: 5%;
+}
+
+#top-home, #top-about {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0% 10%;
+    width: 80%;
+    height: 50%;
+}
+
+#top-home-right{
+    min-width: 56%;
+    max-width: 56%;
+    height: 100%;
+}
+
+#top-home-left {
+    min-width: 40%;
+    max-width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+#top-home-left img {
+    width: 30%;
+    border-radius: 20px;
+}
+
+#top-home-right-top {
+    width: 93%;
+    height: 30px;
+    display: flex;
+    align-content: center;
+}
+
+#top-home-right-bottom {
+    width: 100%;
+    display: flex;
+}
+
+#top-home-right-bottom-left, #top-home-right-bottom-right {
+    width: 307px;
+    margin: 3%;
+    height: 130px;
+}
+
+#top-home-right-bottom-right {
+    margin-left: 12%;
+}
+
+#bottom-home, #bottom-about {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0% 10%;
+    width: 80%;
+    height: 50%;
+}
+
+#bhm-link {
+    margin: 1.2%;
+}
+
+#bottom-home-left {
+    width: 40%;
+    min-height: 100%;
+    max-height: 100%;
+}
+
+#bottom-home-left img {
+    min-width: 100%;
+    max-width: 100%;
+}
+
+#socials {
+    background: rgb(39, 111, 255);
+    background: linear-gradient(118deg, rgb(39, 111, 255) 0%, rgb(13, 99, 248) 32%, rgb(2, 13, 102) 100%);
+    display: flex;
+    border-radius: 20px;
+    padding: 5%;
+    justify-content: space-around;
+    align-content: end;
+    min-height: 60%;
+}
+
+.social-icons i {
+    font-size: 400%;
+    background-color: rgb(6, 36, 119);
+    border: 30px solid rgb(6, 36, 119);
+    border-radius: 100%;
+    color: aliceblue;
+}
+
+.social-icons i:hover {
+    background-color: aliceblue;
+    border-color: aliceblue;
+    color: rgb(6, 36, 119);
+    transition: .2s;
+}
+
+#bottom-home-middle {
+    min-width: 50%;
+    max-width: 50%;
+    min-height: 100%;
+}
+
+#classes {
+    display: flex;
+    justify-content: space-around;
+    align-content: end;
+}
+
+.class {
+    width: 25%;
+}
+
+.class i {
+    font-size: 400%;
+    display: flex;
+    justify-content: center;
+}
+
+.class h6 {
+    text-align: center;
+    font-size: 100%;
+}
+
+.class a, #latest-project a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.class a:hover, #latest-project a:hover {
+    color: rgb(6, 36, 119);
+    transition: .2s;
+}
+
+#bottom-home-right {
+    min-width: 23%;
+    max-width: 23%;
+    min-height: 100%;
+}
+
+a h5 {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+a:hover h5{
+    transition: .2s;
+    color: rgb(6, 36, 119);
+}
+
+#home-main h5 {
+    text-decoration: none;
+    font-size: 100%;
+}
+
+#bottom-home-left:hover img{
+    transition: .2s;
+    content: url("obsidian-blue.png");
+}
+
+#bottom-home-left img:hover {
+    transition: .2s;
+    content: url("obsidian-blue.png");
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.top-part {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.div-20 {
+    width: 100%;
+    height: 20%;
+}
+
+.div-80 {
+    width: 60%;
+}
+
+#container .tile {
+    min-width: 19%;
+    max-width: 19%;
+}
+
+#container a {
+    background-color: aliceblue;
+    border-radius: 20px;
+    padding: 2%;
+    text-decoration: none;
+}
+
+#homework-main a {
+    background-color: aliceblue;
+    margin: 1%;
+    border-radius: 20px;
+    padding: .5%;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#homework-main a:hover {
+    background-color: rgb(1, 10, 29);
+    color: aliceblue;
+    transition: .2s;
+}
+
+.homework-links {
+    width: 100%;
+}
+
+#top-about-left {
+    min-width: 30%;
+    max-width: 30%;
+}
+
+#top-about-left img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#top-about-right {
+    min-width: 70%;
+    max-width: 70%;
+}
+
+#top-about-right-top {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#top-about-right-bottom {
+    height: 60%;
+}
+
+#top-about-right-top h1 {
+    color: aliceblue;
+    font-size: 250%;
+}
+
+#middle-about {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0% 10%;
+    width: 80%;
+    height: 50%;
+}
+
+#middle-about-left {
+    min-width: 20%;
+    max-width: 20%;
+}
+
+#middle-about-right {
+    min-width: 34%;
+    max-width: 34%;
+}
+
+#middle-about-middle {
+    min-width: 34%;
+    max-width: 34%;
+}
+
+#bottom-about-left {
+    min-width: 50%;
+    max-width: 50%;
+}
+
+#bar-link {
+    width: 50%;
+    height: 250px;
+    margin: 1.1%;
+
+}
+
+#bottom-about-right {
+    width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
+
+#bottom-about-middle {
+    min-width: 32%;
+    max-width: 32%;
+}
+
+#home-main a {
+    text-decoration: none;
+}
+
+#about-main a {
+    text-decoration: none;
+}
+
+#resume-main {
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    height: 70%;
+}
+
+#resume-main #aside {
+    min-width: 20%;
+    max-width: 20%;
+    height: 50%;
+    margin-right: 2%;
+}
+
+#aside img {
+    min-width: 97%;
+    max-width: 97%;
+    border-radius: 20px;
+}
+
+#resume-image {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 3%;
+}
+
+#aside i {
+    font-size: 200%;
+    color: aliceblue;
+    background-color: rgb(6, 36, 119);
+    border: 10px solid rgb(6, 36, 119);
+    border-radius: 100%;
+}
+
+#aside i:hover {
+    background: aliceblue;
+    color: rgb(6, 36, 119);
+    border-color: aliceblue;
+}
+
+#icons {
+    background: rgb(39, 111, 255);
+    background: linear-gradient(118deg, rgb(39, 111, 255) 0%, rgb(13, 99, 248) 32%, rgb(2, 13, 102) 100%);
+    display: flex;
+    border-radius: 20px;
+    padding: 5%;
+    justify-content: space-around;
+    align-content: center;
+    margin-bottom: 5%;
+}
+
+#contact-btn {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#contact-btn a {
+    color: aliceblue;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: rgb(39, 111, 255);
+    background: linear-gradient(118deg, rgb(39, 111, 255) 0%, rgb(13, 99, 248) 32%, rgb(2, 13, 102) 100%);
+    border-radius: 20px;
+    padding: 7%;
+    width: 95%;
+    text-align: center;
+    font-size: 150%;
+    
+}
+
+#contact-btn a:hover {
+    background: aliceblue;
+    color: rgb(2, 13, 102);
+    transition: .2s;
+}
+
+.fcf-body {
+    font-family: -apple-system, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #0000ff;
+    text-align: left;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #5DADE2;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+}

@@ -1,20 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coda:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='./script/script.js' defer></script>
     <title>Main Page</title>
 </head>
+
 <body>
-    <h1>Annica McLean's GitHub Website</h1>
+    <header>
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./homework.html">Homework</a>
+            <a href="./github.html">Github</a>
+            <a href="./about.html">About</a>
+            <a href="./contact.html">Contact</a>
+        </nav>
+    </header>
+    <main id="home-main">
+        <div id="top-home">
+            <div id="top-home-left" class="tile">
+                <img src="./blue_photo.webp" alt="">
+                <div class="who-i-am">
+                    <h3>Computer Science Major</h3>
+                    <h2>Annica McLean</h2>
+                    <h4>I am a Computer Science at UNCG.</h4>
+                </div>
+            </div>
+            <div id="top-home-right">
+                <div id="top-home-right-top" class="tile">
+                    <p id="latest-project">Latest Project: <a href="https://github.com/annicamclean/digital-garden-jekyll">digital-garden-jekyll</a></p>
+                </div>
+                <div id="top-home-right-bottom">
+                    <a href="./about.html">
+                        <div id="top-home-right-bottom-left" class="tile">
+                            <h2>About Me</h2>
+                            <p>Find out more about me.</p>
+                        </div>
+                    </a>
+                    <a href="./github.html">
+                        <div id="top-home-right-bottom-right" class="tile">
+                            <h2>Github Repositories</h2>
+                            <p>All of my Github Repos.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="bottom-home">
+            <a href="https://golden-croquembouche-6dce14.netlify.app" id="bhm-link">
+                <div id="bottom-home-left" class="tile">
+                    <img src="./obsidian-white.png" alt="Obsidian Logo in White">
+                    <h5>Obsidian Pages</h5>
+                </div>
+            </a>
+            <div id="bottom-home-middle" class="tile">
+                <div id="classes">
+                    <div class="class">
+                        <a href="./homework.html#csc-300x">
+                            <i class="fa fa-code"></i>
+                            <h6>Web Design</h6>
+                        </a>
+                    </div>
+                    <div class="class">
+                        <a href="./homework.html#csc-340">
+                            <i class="fa fa-code-fork"></i>
+                            <h6>Software Development</h6>
+                        </a>
+                    </div>
+                    <div class="class">
+                        <a href="./homework.html#csc-362">
+                            <i class="fa fa-cogs"></i>
+                            <h6>System Programming</h6>
+                        </a>
+                    </div>
+                </div>
+                <a href="./homework.html"><h5>Homework</h5></a>
+            </div>
+            <div id="bottom-home-right" class="tile">
+                <div id="socials">
+                    <div class="social-icons">
+                        <a href=""><i class="fa fa-instagram"></i></a>
+                    </div>
+                    <div class="social-icons">
+                        <a href=""><i class="fa fa-youtube-play"></i></a>
+                    </div>
+                </div>
+                <h5>Social Media</h5>
+            </div>
+            </a>
 
-    <h2>Term Project for CSC 300X</h2>
-    <h3><a href="./term-project/">Link to Term Project</a></h3>
-
-    <h2>Homework for CSC 300X</h2>
-    <h3><a href="./csc300x-hw2/">Link to Homework #2</a></h3>
-    <h3><a href="./csc300x-hw3/">Link to Homework #3</a></h3>
-    <h3><a href="./csc300x-hw4/">Link to Homework #4</a></h3>
-    <h3><a href="./csc300x-hw5/">Link to Homework #5</a></h3>
+        </div>
+    </main>
 </body>
+
 </html>
