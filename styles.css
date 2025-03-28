@@ -182,12 +182,12 @@ main {
     font-size: 100%;
 }
 
-.class a, #latest-project a {
+.class a, #latest-project a, #middle-about-middle p a {
     text-decoration: none;
     color: aliceblue;
 }
 
-.class a:hover, #latest-project a:hover {
+.class a:hover, #latest-project a:hover, #middle-about-middle p a:hover {
     color: rgb(6, 36, 119);
     transition: .2s;
 }
