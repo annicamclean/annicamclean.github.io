@@ -345,44 +345,11 @@ document.addEventListener('DOMContentLoaded', injectNav);
 if (document.getElementById('container') && document.getElementById('container').classList.contains('horizontal-repo-grid')) {
     const container = document.getElementById('container');
     if (container && container.children.length === 0) {
-        fetch('https://api.github.com/users/annicamclean/repos?per_page=100', {
-                headers: {
-                    'Authorization': `token ${GITHUB_TOKEN}`
-                }
-            })
-            .then(res => res.json())
-            .then(async repos => {
-                if (!Array.isArray(repos)) return;
-                // Fetch commit counts for each repo
-                const repoCommits = await Promise.all(repos.map(async repo => {
-                    const commitsRes = await fetch(repo.commits_url.replace('{/sha}', ''));
-                    const commits = await (commitsRes.ok ? commitsRes.json() : []);
-                    return {
-                        ...repo,
-                        commitCount: Array.isArray(commits) ? commits.length : 0
-                    };
-                }));
-                // Sort by commit count descending and take top 5
-                const topRepos = repoCommits
-                    .sort((a, b) => b.commitCount - a.commitCount)
-                    .slice(0, 5);
-
-                topRepos.forEach(repo => {
-                    const card = document.createElement('div');
-                    card.className = 'tile';
-                    card.innerHTML = `
-                        <div class='repo-info'>
-                            <div class='repo-name'><i class='fa fa-github repo-icon'></i> ${repo.name}</div>
-                            <div class='repo-meta'>Language(s): ${repo.language || 'N/A'}</div>
-                            <div class='repo-meta'>Commits: ${repo.commitCount}</div>
-                        </div>
-                        <div class='repo-links'>
-                            <a href='${repo.html_url}' target='_blank'>View Code</a>
-                        </div>
-                    `;
-                    container.appendChild(card);
-                });
-            });
+        fetch('/api/github-proxy?url=' + encodeURIComponent('https://api.github.com/users/annicamclean/repos?per_page=100'))
+  .then(res => res.json())
+  .then(data => {
+    // ...use your data...
+  });
     }
 }
 
