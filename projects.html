@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Annica McLean's project portfolio - showcasing web development, software development, and system programming/operating systems projects.">
+    <link rel="icon" type="image/png" href="./files/favicon.png">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coda:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='./script/script.js' defer></script>
+    <title>Projects - Annica McLean</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./projects.html" class="active">Projects</a>
+            <a href="./about.html">About</a>
+            <a href="./github.html">GitHub</a>
+            <a href="./contact.html">Contact</a>
+        </nav>
+    </header>
+    <main id="projects-main">
+        <section class="section">
+            <h1>My Projects</h1>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="software">Software Development</button>
+                <button class="filter-btn" data-filter="system">System Programming</button>
+            </div>
+            <div class="projects-grid">
+                <article class="project-card tile" data-category="web">
+                    <h4>Digital Garden Project</h4>
+                    <h3>Digital Garden</h3>
+                    <p>A personal knowledge management system built with Jekyll.</p>
+                    <div class="tech-stack">
+                        <a class="skill-tag" href="./projects.html?skill=Jekyll">Jekyll</a>
+                        <a class="skill-tag" href="./projects.html?skill=HTML%2FCSS">HTML/CSS</a>
+                        <a class="skill-tag" href="./projects.html?skill=JavaScript">JavaScript</a>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/annicamclean/digital-garden-jekyll" class="btn">View Code</a>
+                        <a href="https://golden-croquembouche-6dce14.netlify.app" class="btn">Live Demo</a>
+                    </div>
+                </article>
+                <article class="project-card tile" data-category="web">
+                    <h4>Web Design Homework</h4>
+                    <h3>Bullet Journal RPG</h3>
+                    <p>A web-based RPG for tracking tasks and goals.</p>
+                    <div class="tech-stack">
+                        <a class="skill-tag" href="./projects.html?skill=JavaScript">JavaScript</a>
+                        <a class="skill-tag" href="./projects.html?skill=HTML%2FCSS">HTML/CSS</a>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/DarkSquirrel0/JournalRPG" class="btn">View Code</a>
+                    </div>
+                </article>
+                <article class="project-card tile" data-category="software">
+                    <h4>Software Development Homework</h4>
+                    <h3>Budget Tracker</h3>
+                    <p>A tool for tracking expenses and budgets.</p>
+                    <div class="tech-stack">
+                        <a class="skill-tag" href="./projects.html?skill=Java">Java</a>
+                        <a class="skill-tag" href="./projects.html?skill=JavaScript">JavaScript</a>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/annicamclean/budget-tracker" class="btn">View Code</a>
+                    </div>
+                </article>
+                <article class="project-card tile" data-category="system">
+                    <h4>System Programming Homework</h4>
+                    <h3>MBTI Cognitive Functions Calculator</h3>
+                    <p>Find your cognitive functions by typing in your MBTI typeletters.</p>
+                    <div class="tech-stack">
+                        <a class="skill-tag" href="./projects.html?skill=Java">Java</a>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/annicamclean/MBTI-Cognitive-Functions-Calculator" class="btn">View Code</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="section">
+            <h1>Other Contributions</h1>
+            <div id="contributions-grid" class="projects-grid"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Annica McLean. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/annicamclean" aria-label="GitHub"><i class="fa fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/annicamclean" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

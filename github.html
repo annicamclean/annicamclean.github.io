@@ -15,18 +15,40 @@
     <header>
         <nav>
             <a href="./index.html">Home</a>
-            <a href="./homework.html">Homework</a>
-            <a href="./github.html">Github</a>
+            <a href="./projects.html">Projects</a>
             <a href="./about.html">About</a>
+            <a href="./github.html" class="active">GitHub</a>
             <a href="./contact.html">Contact</a>
         </nav>
     </header>
     <main id="github-main">
         <div class="tile">
-            <h2>Github Repositories</h2>
-            <p>My current Github Repositories with Links to each of them</p>
+            <h2 style="width:100%;text-align:center;margin-bottom:1rem;">GitHub Contributions</h2>
+            <img src="https://ghchart.rshah.org/2196f3/annicamclean" alt="Annica's GitHub Contributions Heatmap" style="width:100%;max-width:1000px;display:block;margin:0 auto 2rem auto;background:#fff;border-radius:16px;padding:1rem;height:180px;">
+            <div style="display:flex;justify-content:center;align-items:center;margin-top:-1.5rem;margin-bottom:1.5rem;gap:1.5rem;">
+                <span style="display:inline-block;width:18px;height:18px;background:#e0e0e0;border-radius:4px;margin-right:0.5em;"></span> 0
+                <span style="display:inline-block;width:18px;height:18px;background:#90caf9;border-radius:4px;margin-right:0.5em;"></span> 1-2
+                <span style="display:inline-block;width:18px;height:18px;background:#2196f3;border-radius:4px;margin-right:0.5em;"></span> 3-4
+                <span style="display:inline-block;width:18px;height:18px;background:#0d47a1;border-radius:4px;margin-right:0.5em;"></span> 5+
+            </div>
         </div>
-        <div id='container'>
+        <div class="tile github-stats-cards" style="display:flex;flex-wrap:wrap;gap:2rem;justify-content:center;align-items:center;">
+            <h2 style="width:100%;text-align:center;margin-bottom:1rem;">GitHub Stats</h2>
+            <img src="https://github-readme-stats.vercel.app/api?username=annicamclean&show_icons=true&theme=blueberry" alt="Annica's GitHub Stats" style="max-width:420px;width:100%;border-radius:16px;">
+            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=annicamclean&layout=compact&theme=blueberry" alt="Annica's Top Languages" style="max-width:340px;width:100%;border-radius:16px;">
+            <img src="https://github-readme-streak-stats.herokuapp.com/?user=annicamclean&theme=blueberry" alt="Annica's GitHub Streak" style="max-width:420px;width:100%;border-radius:16px;">
+        </div>
+        <div class="tile">
+            <h2 style="width:100%;text-align:center;margin-bottom:1rem;">Github Repositories</h2>
+            <p style="width:100%;text-align:center;margin-bottom:1rem;">My current Github Repositories with Links to each of them</p>
+        </div>
+        <!-- Ask if they can only add the top 5 contributions -->
+        <div id='container' class="repo-grid horizontal-repo-grid">
+        </div>
+        <div style="width:100%;text-align:center;margin:2rem 0 1rem 0;">
+            <a href="https://github.com/annicamclean" target="_blank" class="btn">
+                <i class="fa fa-github"></i> Visit My GitHub Profile
+            </a>
         </div>
     </main>
 </body>

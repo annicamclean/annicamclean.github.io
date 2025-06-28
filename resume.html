@@ -8,90 +8,108 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Coda:wght@400;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='./script/script.js' defer></script>
     <title>Resume</title>
 </head>
 <body>
     <header>
         <nav>
             <a href="./index.html">Home</a>
-            <a href="./homework.html">Homework</a>
-            <a href="./github.html">Github</a>
+            <a href="./projects.html">Projects</a>
             <a href="./about.html">About</a>
+            <a href="./github.html">GitHub</a>
             <a href="./contact.html">Contact</a>
         </nav>
     </header>
     <main id="resume-main">
-        <div id="aside" class="tile">
-            <div id="resume-image">
-                <img src="./blue_photo.webp" alt="">
-            </div>
-            <div id="icons">
-                <a href="https://www.linkedin.com/in/annicamclean/"><i class="fa fa-linkedin"></i></a>
-                <a href="https://github.com/annicamclean"><i class="fa fa-github"></i></a>
-            </div>
-            <div id="contact-btn">
-                <a href="./contact.html">Contact Me</a>
-            </div>
-            <div id="contact-btn">
-                <a href="./files/Annica_McLean_Current_Resume.pdf">Download Resume</a>
-            </div>
-        </div>
-        <div>
-            <h2>About Me</h2>
-                <p>I currently go to the University of North Carolina at Greensboro and am working towards my Bachelors in Computer Science and my minor in Mathematics. I have been studying coding and programming since I was in 8th grade and enjoy learning new things. I also like to play guitar, draw, and writing.</p>
-                <br>
-
-                <h2>Education</h2>
-
-                <h4>2021 - 2025</h4>
-                <h3>Bachelor Degree in Computer Science</h3>
-                <h5>University of North Carolina at Greensboro</h5>
-                <p>- Currently a Senior</p>
-                <p>- 3.75/4.0</p>
-                <p>- Graduated Magna Cum Laude</p>
-                <p>- Was on the Chancellor's List all 4 years</p>
-                <br>
-
-                <h2>Experience</h2>
-                <h4>2022 - Current</h4>
-                <h3>Tutoring and Teaching Assistant</h3>
-                <h5>University of North Carolina at Greensboro</h5>
-                <p>- As a teaching assistant I assist students in Introduction to Computer Science with lab assignments, providing guidance and support.</p>
-                <p>- I also grade lab assignments, providing constructive feedback to students to aid in their learning process.</p>
-                <p>- For tutoring I help students in the Introduction to Computer Science, Foundations of Computer Science 1 and 2, Computer Organization and Assembly Language, and Elementary Data Structures and Algorithms.</p>
-                <br>
-
-                <h2>Clubs and Activities</h2>
-                <h4>2021 - Current</h4>
-                <h3>Association for Computing Machinery</h3>
-                <h5>University of North Carolina at Greensboro</h5>
-                <br>
-
-                <h4>2023</h4>
-                <h3>Undergraduate Research Expo</h3>
-                <h5>University of North Carolina at Greensboro</h5>
-                <p>- I did a research capstone around the question "Why is Biohacking Becoming So Popular, Specifically When it Comes to Wearable Devices?"</p>
-                <p>- I talked about the positives and negatives of biohacking.</p>
-                <p>- I got a $50 reward for my research.</p>
-                <br>
-
-                <h2>Skills</h2>
-                <h3>Languages</h3>
-                <ul>
-                    <ol>Java</ol>
-                    <ol>HTML/CSS</ol>
-                    <ol>JavaScript/TypeScript</ol>
-                    <ol>Python</ol>
-                    <ol>C/C++</ol>
-                    <ol>SQL</ol>
-                    <ol>Assembly</ol>
-                    <ol>React/ React Native</ol>
-                </ul>
-                <h3>Tools/Technologies</h3>
-                <ul>
-                    <ol>Git</ol>
-                </ul>
-        </div>
+        <section class="resume-grid">
+            <aside class="resume-profile tile">
+                <div class="resume-image">
+                    <img src="./blue_photo.webp" alt="Annica McLean">
+                </div>
+                <div class="resume-links">
+                    <a href="https://www.linkedin.com/in/annicamclean/" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://github.com/annicamclean" aria-label="GitHub"><i class="fa fa-github"></i></a>
+                </div>
+                <a class="resume-btn" href="./contact.html"><i class="fa fa-envelope"></i> Contact Me</a>
+                <a class="resume-btn" href="./files/Annica_McLean_Current_Resume.pdf"><i class="fa fa-download"></i> Download Resume</a>
+            </aside>
+            <section class="resume-content">
+                <h1 class="resume-title">Annica McLean</h1>
+                <h2 class="resume-section">About Me</h2>
+                <p>I currently go to the University of North Carolina at Greensboro and am working towards my Bachelors in Computer Science and my minor in Mathematics. I have been studying coding and programming since I was in 8th grade and enjoy learning new things. I also like to play guitar, draw, and write.</p>
+                <h2 class="resume-section">Education</h2>
+                <div class="resume-block">
+                    <div>
+                        <h3>2021 - 2025</h3>
+                        <h4>Bachelor Degree in Computer Science</h4>
+                        <h5>University of North Carolina at Greensboro</h5>
+                        <ul>
+                            <li>Currently a Senior</li>
+                            <li>3.75/4.0 GPA</li>
+                            <li>Graduated Magna Cum Laude</li>
+                            <li>Chancellor's List all 4 years</li>
+                        </ul>
+                    </div>
+                </div>
+                <h2 class="resume-section">Experience</h2>
+                <div class="resume-block">
+                    <div>
+                        <h3>2022 - Current</h3>
+                        <h4>Tutoring and Teaching Assistant</h4>
+                        <h5>University of North Carolina at Greensboro</h5>
+                        <ul>
+                            <li>Assisted students in Introduction to Computer Science with lab assignments, providing guidance and support.</li>
+                            <li>Graded lab assignments, providing constructive feedback to students.</li>
+                            <li>Tutored students in CS, Data Structures, Algorithms, Assembly, and more.</li>
+                        </ul>
+                    </div>
+                </div>
+                <h2 class="resume-section">Clubs and Activities</h2>
+                <div class="resume-block">
+                    <div>
+                        <h3>2021 - Current</h3>
+                        <h4>Association for Computing Machinery</h4>
+                        <h5>University of North Carolina at Greensboro</h5>
+                    </div>
+                    <div>
+                        <h3>2023</h3>
+                        <h4>Undergraduate Research Expo</h4>
+                        <h5>University of North Carolina at Greensboro</h5>
+                        <ul>
+                            <li>Capstone: "Why is Biohacking Becoming So Popular, Especially for Wearable Devices?"</li>
+                            <li>Presented positives and negatives of biohacking.</li>
+                            <li>Received $50 research award.</li>
+                        </ul>
+                    </div>
+                </div>
+                <h2 class="resume-section">Skills</h2>
+                <div class="resume-block resume-skills">
+                    <div>
+                        <h4>Languages</h4>
+                        <ul>
+                            <li>Java</li>
+                            <li>HTML/CSS</li>
+                            <li>JavaScript/TypeScript</li>
+                            <li>Python</li>
+                            <li>C/C++</li>
+                            <li>SQL</li>
+                            <li>Assembly</li>
+                            <li>React/React Native</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Tools/Technologies</h4>
+                        <ul>
+                            <li>Git</li>
+                            <li>VS Code</li>
+                            <li>Linux</li>
+                            <li>Jupyter</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </section>
     </main>
 </body>
 </html>
